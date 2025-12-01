@@ -20,15 +20,16 @@
 
 @import url("https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+DW+Pica:ital@0;1&family=UnifrakturMaguntia&family=UnifrakturCook&family=MedievalSharp&family=Cinzel+Decorative:wght@400;700;900&family=Alegreya:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:wght@300;400;500;600&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+English+SC:ital@0;1&display=swap")
 
 table#tlayout {
     border: none;
     border-collapse: separate;
-    background: #f2e2b2;
+    background: #ebe1c3;
 }
 
 body {
-	background: #f2e2b2;
+	background: #efe6c9;
 	font-family: "IM Fell English", "Cormorant", "Cochin", Georgia, serif; /* "IM Fell Double Pica", "IM Fell Great Primer", "IM Fell DW Pica", */
 	padding-bottom: 0px;
 	margin: 0px;
@@ -69,7 +70,7 @@ body {text-align: justify;}
 	padding-left: calc(15vw - 3em);
 	padding-right: calc(15vw - 3em);
     border: none;
-    background: #ebe1c3 /* rgb(234, 234, 234) */;      /* color_code */
+    background: #efe6c9 /* rgb(234, 234, 234) */;      /* color_code */
     text-align: left;
     vertical-align: top;
 	color: #1A150E /* rgb(49, 49, 49) */;		/*text color*/     /* color_code */
@@ -150,7 +151,8 @@ div#subtitle {
 }
 
 i, em {
-	font-size: 110%;
+	font-size: 80%;
+	font-style: normal ;
 }
 
 b, strong {
