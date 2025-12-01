@@ -1,0 +1,446 @@
+/* Default css file for jemdoc. */
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700;800;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap");
+
+/* IM Fell English */
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap");
+
+/* IM Fell DW Pica */
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&display=swap");
+
+/* IM Fell Great Primer */
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer:ital@0;1&display=swap");
+
+/* IM Fell Double Pica */
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@0;1&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+DW+Pica:ital@0;1&family=UnifrakturMaguntia&family=UnifrakturCook&family=MedievalSharp&family=Cinzel+Decorative:wght@400;700;900&family=Alegreya:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:wght@300;400;500;600&display=swap");
+
+
+table#tlayout {
+    border: none;
+    border-collapse: separate;
+    background: #f2e2b2;
+}
+
+body {
+	background: #f2e2b2;
+	font-family: "IM Fell English", "Cormorant", "Cochin", Georgia, serif; /* "IM Fell Double Pica", "IM Fell Great Primer", "IM Fell DW Pica", */
+	padding-bottom: 0px;
+	margin: 0px;
+	font-size: 1.6em;
+	text-align: justify;
+	/* scale: 1; */
+	/* width: ; */
+}
+
+body {text-align: justify;}
+
+/* nice font: Cochin, Trebuchet MS, Verdana, Geneva, fantasy */
+
+/* bad font: sans-serif, Impact, Haettenschweiler, 'Arial Narrow Bold', 'Courier New', Courier, monospace, cursive, Helvetica */
+
+#layout-menu {
+	background: #ebe1c3 /* rgb(219, 219, 219) */;			/* color_code */
+	border: 0px solid #000000; /* border around the menu block */
+	padding-top: 0.93em;
+	padding-left: 8px; /* left of the text */
+	padding-right: 26px; /* right of the text */
+	font-size: 1em;
+	width: auto;
+	white-space: nowrap;
+    text-align: left;
+    vertical-align: top;
+	margin: 0
+}
+
+
+#layout-menu td {
+	background: #f4f4f4;
+    vertical-align: top;
+}
+
+#layout-content {
+	padding-top: 1em;
+	padding-left: calc(15vw - 3em);
+	padding-right: calc(15vw - 3em);
+    border: none;
+    background: #ebe1c3 /* rgb(234, 234, 234) */;      /* color_code */
+    text-align: left;
+    vertical-align: top;
+	color: #1A150E /* rgb(49, 49, 49) */;		/*text color*/     /* color_code */
+	text-align: justify;
+	
+}
+
+#layout-menu a {
+	line-height: 2em;
+	margin-left: 0.5em;
+}
+
+tt {
+    background: #ffffdd;
+}
+
+pre, tt {
+	font-size: 90%;
+	font-family: monaco, monospace;
+}
+
+#a, a > tt {
+	color: #081e8a; /* #0502b5; #224b8d; */	/* dont know */
+	text-decoration: none; 
+}
+
+a, a > tt {
+	color:  #902d22 /* #891212 */;      /* color_code */
+	text-decoration: none;
+}
+
+
+a:hover {
+	border-bottom: 0px rgb(0, 0, 0) solid; /* line below the link when click in */
+}
+
+#layout-menu a.current:link, #layout-menu a.current:visited {
+	color: #000000;  /*#0502b5; #022b6d; */
+	border-bottom: 0px #b3b3b3 solid;
+}
+#layout-menu a:link, #layout-menu a:visited, #layout-menu a:hover {
+	color: #000000; /* #021dc9; #527bbd; */
+	text-decoration: none;
+}
+#layout-menu a:hover {
+	text-decoration: none;
+}
+
+div.menu-category {
+	border-bottom: 1px solid gray;
+	margin-top: 0.8em;
+	padding-top: 0.2em;
+	padding-bottom: 0.1em;
+	font-weight: bold;
+}
+
+div.menu-item {
+	padding-left: 16px;
+	text-indent: -16px;
+}
+
+div#toptitle {
+	padding-bottom: 0.2em;
+	margin-bottom: 1.5em;
+	border-bottom: 3px double gray;
+}
+
+/* Reduce space if we begin the page with a title. */
+div#toptitle + h2, div#toptitle + h3 {
+	margin-top: -0.7em;
+}
+
+div#subtitle {
+	margin-top: 0.0em;
+	margin-bottom: 0.0em;
+	padding-top: 0em;
+	padding-bottom: 0.1em;
+}
+
+i, em {
+	font-size: 110%;
+}
+
+b, strong {
+	font-weight: bold;
+	text-shadow: 0.001px 0 0 currentColor,
+                 0.001px 0 0 currentColor,
+                 0 0.001px 0 currentColor,
+                 0 0.001px 0 currentColor;
+}
+
+
+h1{
+	color: #000000; /*#2004c2;  #4405b0; #527bbd; */ /*color of the highest title */
+	margin-top: -0.5em;
+	margin-bottom: 0.3em;
+	padding-bottom: 0.2em;
+	line-height: 1.0;
+	padding-top: 1.5em;
+	padding-bottom: 0.5em;
+}
+
+
+h2, h3 {
+	color: #000000; /*#2004c2;  #4405b0; #527bbd; */ /*color of other titles */
+	margin-top: 0em;
+	margin-bottom: 1em;
+	padding-bottom: 0.2em;
+	line-height: 1.0;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+h1 {
+	font-size: 185%;
+}
+
+h2 {
+	padding-top: 0.8em;
+	font-size: 140%;
+}
+
+h2 + h3 {
+    padding-top: 0.2em;
+}
+
+h3 {
+	font-size: 110%;
+	border-bottom: none;
+}
+
+p {
+	margin-top: 0.0em;
+	margin-bottom: 0.8em;
+	padding: 0;
+	line-height: 1.3;
+}
+
+pre {
+	padding: 0;
+	margin: 0;
+}
+
+div#footer {
+	font-size: small;
+	border-top: 1px solid #c0c0c0; /* the line of jemdoc at last */
+	padding-top: 0.1em;
+	margin-top: 4.0em;
+	color: #c0c0c0;
+}
+
+div#footer a {
+	color: #80a0b0;
+}
+
+div#footer-text {
+	float: left;
+	padding-bottom: 8px;
+}
+
+ul, ol, dl {
+	margin-top: 0.2em;
+	padding-top: 0;
+	margin-bottom: 0.8em;
+	text-align: justify;
+}
+
+dt {
+	margin-top: 0.5em;
+	margin-bottom: 0;
+}
+
+dl {
+	margin-left: 20px;
+}
+
+dd {
+	color: #222222;
+}
+
+dd > *:first-child {
+	margin-top: 0;
+}
+
+ul {
+    list-style: none;      /* remove default bullets */
+    padding-left: 3;       /* remove extra left indent */
+    margin-left: 0;
+}
+
+ul li {
+    position: relative;
+    padding-left: 1.2em;   /* space between "." and text */
+}
+
+ul li::before {
+    content: ".";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: calc(5em - 3vw);      /* make the dot slightly larger */
+    line-height: 0;
+}
+
+
+p + ul, p + ol {
+	margin-top: -0.5em;
+}
+
+li ul, li ol {
+	margin-top: -0.3em;
+}
+
+ol {
+	list-style-position: outside;
+	list-style-type: decimal;
+}
+
+li p, dd p {
+	margin-bottom: 0.3em;
+}
+
+
+ol ol {
+	list-style-type: lower-alpha;
+}
+
+ol ol ol {
+	list-style-type: lower-roman;
+}
+
+p + div.codeblock {
+	margin-top: -0.6em;
+}
+
+div.codeblock, div.infoblock {
+	margin-right: 0%;
+	margin-top: 1.2em;
+	margin-bottom: 1.3em;
+}
+
+div.blocktitle {
+	font-weight: bold;
+	color: #cd7b62;
+	margin-top: 1.2em;
+	margin-bottom: 0.1em;
+}
+
+div.blockcontent {
+	border: 1px solid silver;
+	padding: 0.3em 0.5em;
+}
+
+div.infoblock > div.blockcontent {
+	background: #fff3ee;
+}
+
+div.blockcontent p + ul, div.blockcontent p + ol {
+	margin-top: 0.4em;
+}
+
+div.infoblock p {
+	margin-bottom: 0em;
+}
+
+div.infoblock li p, div.infoblock dd p {
+	margin-bottom: 0.5em;
+}
+
+div.infoblock p + p {
+	margin-top: 0.8em;
+}
+
+div.codeblock > div.blockcontent {
+	background: #f6f6f6;
+}
+
+span.pycommand {
+	color: #000070;
+}
+
+span.statement {
+	color: #008800;
+}
+span.builtin {
+	color: #000088;
+}
+span.special {
+	color: #990000;
+}
+span.operator {
+	color: #880000;
+}
+span.error {
+	color: #aa0000;
+}
+span.comment, span.comment > *, span.string, span.string > * {
+	color: #606060;
+}
+
+@media print {
+	#layout-menu { display: none; }
+}
+
+#fwtitle {
+	margin: 2px;
+}
+
+#fwtitle #toptitle {
+	padding-left: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+#layout-content h1:first-child, #layout-content h2:first-child, #layout-content h3:first-child {
+	margin-top: -0.7em;
+}
+
+div#toptitle h1, #layout-content div#toptitle h1 {
+	margin-bottom: 0.0em;
+	padding-bottom: 0.1em;
+	padding-top: 0;
+	margin-top: 0.5em;
+	border-bottom: none;
+}
+
+img.eq {
+	padding: 0;
+	padding-left: 0.1em;
+	padding-right: 0.1em;
+	margin: 0;
+}
+
+img.eqwl {
+	padding-left: 2em;
+	padding-top: 0.6em;
+	padding-bottom: 0.2em;
+	margin: 0;
+}
+
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 2px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    text-align: center;
+    border: 1px solid gray;
+}
+
+table + table {
+    margin-top: 1em;
+}
+
+tr.heading {
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+
+img {
+    border: none;
+}
+
+table.imgtable, table.imgtable td {
+    border: none;
+    text-align: left;
+}
+
+
+
+
+summary { display: block; }
