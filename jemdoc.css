@@ -446,3 +446,7 @@ table.imgtable, table.imgtable td {
 
 
 summary { display: block; }
+
+#footer {
+    display: none;
+}
