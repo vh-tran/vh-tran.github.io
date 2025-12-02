@@ -67,6 +67,7 @@ body {text-align: justify;}
 
 #layout-content {
 	padding-top: 1em;
+	padding-bottom: 5em;
 	padding-left: calc(15vw - 3em);
 	padding-right: calc(15vw - 3em);
     border: none;
