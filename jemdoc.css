@@ -44,7 +44,7 @@ table#tlayout {
 
 body {
 	background: #fffbeb;
-	font-family: "IM Fell English", "Cormorant", "Cochin", Georgia, serif; /* "IM Fell Double Pica", "IM Fell Great Primer", "IM Fell DW Pica", */
+	font-family: /*"IM Fell English", */ "Cormorant", "Cochin", Georgia, serif; /* "IM Fell Double Pica", "IM Fell Great Primer", "IM Fell DW Pica", */
 	padding-bottom: 0px;
 	margin: 0px;
 	font-size: 1.6em;
@@ -455,3 +455,27 @@ summary { display: block; }
     display: none;
 }      */
 /* footer of jemdoc */
+
+
+.top-nav {
+  text-align: right;
+  font-size: 100%;
+}
+
+.top-nav a,
+.dropbtn {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0 0.2em;
+}
+
+.top-nav a:hover,
+.dropdown:hover .dropbtn {
+  color: #8c2d19; /* same reddish accent */
+}
+
+.sep {
+  margin: 0 0.3em;
+}
+
