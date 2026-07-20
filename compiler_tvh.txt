@@ -1,0 +1,5 @@
+python jemdoc.py index.jemdoc
+python jemdoc.py publications.jemdoc
+python jemdoc.py talks.jemdoc
+python patch_seo.py
+start index.html

@@ -1,0 +1,190 @@
+# jemdoc: title{Viet-Hoang Tran}
+
+# # jemdoc: menu{MENU}{index.html}
+
+{{
+<div style="text-align:right;">
+<p>
+<a href="index.html"><font color="black">home</font></a>         <span style="margin-left:20px;"></span> | <span style="margin-left:20px;"></span>    <a href="publications.html"><font color="black">publications</font></a>    <span style="margin-left:20px;"></span> | <span style="margin-left:20px;"></span>   <a href="talks.html"><font color="black">talks</font></a>  <span style="margin-left:100px;"></span>
+</p>
+</div>
+}}
+
+= *Viet-Hoang Tran*
+
+
+
+
+
+
+I'm currently a fourth-year Ph.D. student in the [https://www.math.nus.edu.sg/ Department of Mathematics], [https://nus.edu.sg/ National University of Singapore].
+
+\n
+
+\n
+
+I began my Ph.D. in August 2022 in Mathematics. In September 2023, I shifted my research focus to Machine Learning and started working under the supervision of Professor [https://tanmnguyen89.github.io/ Tan Minh Nguyen].
+
+\n
+
+\n
+
+Previously, I completed an Honors degree in Mathematics at the [https://english.hus.vnu.edu.vn/ Hanoi University of Science] (2018-2022). \n
+
+\n
+
+email: hoang.tranviet \[at\] u.nus.edu {{<span style="margin-left:15px;"></span> }} | {{<span style="margin-left:15px;"></span> }} [https://scholar.google.com/citations?hl=en&user=HXsV5dQAAAAJ&view_op=list_works&sortby=pubdate Google Scholar] 
+
+
+
+
+
+
+
+
+== *Research Interests*
+
+- *Symmetry of Parameter Space.* This research direction aims to completely characterize the symmetries inherent in modern neural architectures and to translate these theoretical insights into practical methodologies, including the  analysis of (linear) mode connectivity, the design of symmetry-respecting optimizers, and the development of equivariant metanetworks.
+
+\n
+
+- *Efficient methods based on Optimal Transport (OT).* Our research develops scalable OT-based techniques, with a particular focus on tree-sliced OT, a generalization of sliced OT that exploits closed-form solutions of OT problems on tree metric spaces. \n
+
+{{}}
+
+keywords: machine learning, parameter space symmetry, mode connectivity, metanetwork, optimal transport
+
+
+
+
+
+
+
+== *News*
+
+- *May 2026*. 3 papers accepted at ICML 2026:
+-- [https://arxiv.org/abs/2606.17816 *Conservation Laws for Modern Neural Architectures*] *(spotlight)*
+-- [https://arxiv.org/abs/2606.17830 *Functional Equivalence in Attention: A Comprehensive Study with Applications to Linear Mode Connectivity*]
+-- [https://arxiv.org/abs/2606.19036 *Geometric and Stochastic Analysis of Discontinuities in Sparse Mixture-of-Experts*] *(spotlight)*
+
+- *Jan 2026*. 4 papers accepted at ICLR 2026:
+-- [https://openreview.net/forum?id=XMiDpi2mWY *Quasi-Equivariant Metanetworks*]
+-- [https://openreview.net/forum?id=e439wJl5sT *Mixed-Curvature Tree-Sliced Wasserstein Distance*]
+-- [https://openreview.net/forum?id=HHNQSXaLkF *Tree-sliced Sobolev IPM*]
+-- [https://openreview.net/forum?id=kDqG03v05B *Revisiting Tree-Sliced Wasserstein Distance Through the Lens of the Fermat-Weber Problem*]
+
+{{
+<details>
+<summary><font color="black"> <span style="font-size: 0.7em; font-weight: bold;text-shadow: 0.7px 0 0 currentColor,
+0.7px 0 0 currentColor,
+0 0.7px 0 currentColor,
+0 0.7px 0 currentColor;"> > <span style="margin-left:7px;"></span> </span>
+</font>
+<font color="black"> <span style="font-size: 80%;"> older news <span style="margin-left:7px;"></span> </span>
+</font>
+</summary>
+<ul>
+<li><p><b>Oct 2025</b>. 1 paper accepted at AAAI 2026 Workshop MATH4AI:
+<ul>
+<li><p><a href="https://openreview.net/forum?id=aUTKbAfgzn" target=&ldquo;blank&rdquo;><b>Modeling Expert Interactions in Sparse Mixture of Experts via Graph Structures</b></a>
+</p>
+</li>
+</ul>
+</p>
+</li>
+<li><p><b>Sep 2025</b>. 3 papers accepted at NeurIPS 2025:
+<ul>
+<li><p><a href="https://arxiv.org/abs/2509.11348" target=&ldquo;blank&rdquo;><b>On Linear Mode Connectivity of Mixture-of-Experts Architectures</b></a> <b>(oral)</b>
+</p>
+</li>
+<li><p><a href="https://openreview.net/forum?id=41ZbysfW4h" target=&ldquo;blank&rdquo;><b>Tree-Sliced Entropy Partial Transport</b></a>
+</p>
+</li>
+<li><p><a href="https://openreview.net/forum?id=i9Vn8vV99g" target=&ldquo;blank&rdquo;><b>Dynamical Properties of Tokens in Self-Attention and Effects of Positional Encoding</b></a>
+</p>
+</li>
+</ul>
+</p>
+</li>
+<li><p><b>May 2025</b>. 3 papers accepted at ICML 2025:
+<ul>
+<li><p><a href="https://arxiv.org/abs/2410.04213" target=&ldquo;blank&rdquo;><b>Equivariant Polynomial Functional Networks</b></a>
+</p>
+</li>
+<li><p><a href="https://arxiv.org/abs/2406.13725" target=&ldquo;blank&rdquo;><b>Tree-Sliced Wasserstein Distance: A Geometric Perspective</b></a>
+</p>
+</li>
+<li><p><a href="https://arxiv.org/abs/2505.00968" target=&ldquo;blank&rdquo;><b>Tree-Sliced Wasserstein Distance with Nonlinear Projection</b></a>
+</p>
+</li>
+</ul>
+</p>
+</li>
+<li><p><b>Feb 2025</b>. 1 paper accepted at ICLR 2025 Workshop Weight Space Learning:
+<ul>
+<li><p><a href="https://arxiv.org/abs/2410.04209" target=&ldquo;blank&rdquo;><b>Equivariant Neural Functional Networks for Transformers</b></a> <b>(spotlight)</b>
+</p>
+</li>
+</ul>
+</p>
+</li>
+<li><p><b>Jan 2025</b>. 3 papers accepted at ICLR 2025:
+<ul>
+<li><p><a href="https://arxiv.org/abs/2410.04209" target=&ldquo;blank&rdquo;><b>Equivariant Neural Functional Networks for Transformers</b></a>
+</p>
+</li>
+<li><p><a href="https://arxiv.org/abs/2503.11050" target=&ldquo;blank&rdquo;><b>Distance-Based Tree-Sliced Wasserstein Distance</b></a>
+</p>
+</li>
+<li><p><a href="https://arxiv.org/abs/2503.11249" target=&ldquo;blank&rdquo;><b>Spherical Tree-Sliced Wasserstein Distance</b></a>
+</p>
+</li>
+</ul>
+</p>
+</li>
+<li><p><b>Sep 2024</b>. 1 paper accepted at NeurIPS 2024:
+<ul>
+<li><p><a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/577cd5863ec73be4e6871340be0936ae-Abstract-Conference.html" target=&ldquo;blank&rdquo;><b>Monomial Matrix Group Equivariant Neural Functional Networks</b></a>
+</p>
+</li>
+</ul>
+</p>
+</li>
+</ul>
+</details>
+}}
+
+
+== *Selected Publications*
+
+- [https://arxiv.org/abs/2606.17816 *Conservation Laws for Modern Neural Architectures*] \n
+*Viet-Hoang Tran*¹, Vinh Khanh Bui¹, Tan Lai Ngoc, Nam Nguyen, Tuan Dam, Tan M. Nguyen² \n
+ICML 2026 *(spotlight)*
+
+- [https://arxiv.org/abs/2509.11348 *On Linear Mode Connectivity of Mixture-of-Experts Architectures*] \n
+*Viet-Hoang Tran*¹, Van Hoan Trinh¹, Khanh Vinh Bui¹, Tan M. Nguyen² \n
+NeurIPS 2025 *(oral)*
+
+- [https://arxiv.org/abs/2410.04209 *Equivariant Neural Functional Networks for Transformers*] \n
+*Viet-Hoang Tran*¹, Thieu N. Vo¹, An Nguyen The¹, Tho Tran Huu, Minh-Khoi Nguyen-Nhat, Thanh Tran, Duy-Tung Pham, Tan Minh Nguyen² \n
+ICLR 2025 \n
+
+- [https://arxiv.org/abs/2503.11050 *Distance-Based Tree-Sliced Wasserstein Distance*] \n
+*Viet-Hoang Tran*¹, Khoi N.M. Nguyen¹, Trang Pham, Thanh T. Chu, Tam Le², Tan M. Nguyen² \n
+ICLR 2025 \n
+
+{{}}
+
+{{
+<a href="publications.html"> 
+<font color="black"> <span style="font-size: 0.7em; font-weight: bold;text-shadow: 0.7px 0 0 currentColor,
+                 0.7px 0 0 currentColor,
+                 0 0.7px 0 currentColor,
+                 0 0.7px 0 currentColor;"> > <span style="margin-left:7px;"></span> </span> 
+</font>
+<font color="black"> <span style="font-size: 80%;"> all publications <span style="margin-left:7px;"></span> </span> 
+                </font>
+</a>
+}}
+
+

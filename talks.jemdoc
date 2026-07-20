@@ -1,0 +1,42 @@
+# jemdoc: title{Viet-Hoang Tran | talks}
+
+# # jemdoc: menu{MENU}{talks.html}
+
+{{
+<div style="text-align:right;">
+<p>
+<a href="index.html"><font color="black">home</font></a>         <span style="margin-left:20px;"></span> | <span style="margin-left:20px;"></span>    <a href="publications.html"><font color="black">publications</font></a>    <span style="margin-left:20px;"></span> | <span style="margin-left:20px;"></span>   <a href="talks.html"><font color="black">talks</font></a>  <span style="margin-left:100px;"></span>
+</p>
+</div>
+}}
+
+= *Viet-Hoang Tran {{<span style="margin-left:15px;"></span> }} | {{<span style="margin-left:15px;"></span> }} talks*
+
+
+- *04/2026*. {{<a><b>Functional Equivalence in Neural Networks</b></a>}} \n 
+Weekly Seminar, University of California, Los Angeles
+
+- *04/2026*. {{<a><b>Functional Equivalence in Neural Networks</b></a>}} \n 
+Hanoi - Singapore Meeting, Vietnam Institute for Advanced Study in Mathematics, Hanoi
+
+- *02/2026*. {{<a><b>Symmetry in Parameter Space</b></a>}} \n 
+Graduation Day, 2026 Information Theory and Applications Workshop, San Diego
+
+- *12/2025*. {{<a><b>Symmetry in Parameter Space: Theory and Application</b></a>}} \n 
+Machine Learning Seminar, Machine Learning Lab, SOICT-HUST, Hanoi University of Science and Technology, Hanoi
+
+- *12/2025*. [https://arxiv.org/abs/2509.11348 *On Linear Mode Connectivity of Mixture-of-Experts Architectures*] \n 
+Oral talk. NeurIPS 2025, San Diego
+
+- *07/2025*. {{<a><b>Functional Equivalence in Neural Architectures</b></a>}} \n 
+Mathematical Seminar, Faculty of Mathematics, Mechanics and Informatics, Hanoi University of Science, Hanoi
+
+- *06/2025*. {{<a><b>Functional Equivalence in Neural Architectures</b></a>}} \n 
+Joint FDU-NUS-ZJU PhD Forum in Mathematics, Department of Mathematics, National University of Singapore, Singapore
+
+- *04/2025*. [https://arxiv.org/abs/2410.04209 *Equivariant Neural Functional Networks for Transformers*] \n 
+Contributed talk. ICLR 2025 Weight Space Learning Workshop, Singapore
+
+- *10/2024*. {{<a><b>Algebraic Perspective of Neural Architecture</b></a>}} \n 
+Weekly Seminar, Department of ECE, Rice University, Houston
+
