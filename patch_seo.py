@@ -63,7 +63,8 @@ for filename, meta in PAGES.items():
         print(f"{filename}: SEO tags already present, skipping.")
         continue
 
-    tags = f"""<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    tags = f"""<meta name="google-site-verification" content="vF07eozERs0B_XCsLKBS5_4bnkOF3awTJbaoPMgkoUY" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="{meta['description']}" />
 <meta name="author" content="Viet-Hoang Tran" />
 <meta name="keywords" content="{meta['keywords']}" />
