@@ -10,7 +10,7 @@ BASE_URL = "https://vh-tran.github.io"
 PAGES = {
     "index.html": {
         "description": "Viet-Hoang Tran – Ph.D. student in Mathematics at the National University of Singapore (NUS).",
-        "keywords": "Viet-Hoang Tran, machine learning, parameter space symmetry, mode connectivity, metanetwork, optimal transport, NUS, National University of Singapore, neural functional networks, tree-sliced Wasserstein",
+        "keywords": "Viet-Hoang Tran, Tran Viet Hoang, machine learning, parameter space symmetry, mode connectivity, metanetwork, optimal transport, NUS, National University of Singapore, neural functional networks, tree-sliced Wasserstein",
         "og_title": "Viet-Hoang Tran",
         "canonical": f"{BASE_URL}/",
         "schema": """<script type="application/ld+json">
