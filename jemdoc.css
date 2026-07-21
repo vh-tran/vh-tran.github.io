@@ -4,7 +4,7 @@
 table#tlayout {
     border: none;
     border-collapse: separate;
-    background: #fffbeb;					/* color_code */
+    background: #eceae5;					/* color_code */
 }
 
 #layout-content {
@@ -13,7 +13,7 @@ table#tlayout {
 	padding-left: calc(15vw - 3em);
 	padding-right: calc(15vw - 3em);
     border: none;
-    background: #fffbeb /* rgb(234, 234, 234) */;      /* color_code */
+    background: #eceae5 /* rgb(234, 234, 234) */;      /* color_code */
     text-align: left;
     vertical-align: top;
 	color: #1A150E /* rgb(49, 49, 49) */;		/*text color*/     /* color_code */
@@ -22,7 +22,7 @@ table#tlayout {
 }
 
 body {
-	background: #fffbeb;
+	background: #eceae5;
 	font-family: /*"IM Fell English", */ "Cochin", Georgia, serif; /* "IM Fell Double Pica", "IM Fell Great Primer", "IM Fell DW Pica", */
 	padding-bottom: 0px;
 	margin: 0px;
@@ -79,13 +79,13 @@ pre, tt {
 }
 
 a, a > tt {
-	color:  #902d22 /* #891212 */;      /* color_code */
+	color: #1a0dab;
 	text-decoration: none;
 }
 
 
 a[href]:hover {
-	background-color: rgba(144, 45, 34, 0.08);
+	background-color: rgba(26, 13, 171, 0.08);
 	padding: 1px 4px;
 	border-radius: 3px;
 	transition: background-color 0.15s ease;
@@ -100,7 +100,7 @@ details > summary::-webkit-details-marker {
 	display: none;
 }
 details > summary:hover {
-	background-color: rgba(144, 45, 34, 0.08);
+	background-color: rgba(26, 13, 171, 0.08);
 	padding: 1px 4px;
 	border-radius: 3px;
 	transition: background-color 0.15s ease;
