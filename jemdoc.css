@@ -373,6 +373,17 @@ span.comment, span.comment > *, span.string, span.string > * {
 	#layout-menu { display: none; }
 }
 
+@media screen and (max-width: 700px) {
+	body {
+		font-size: 1.1em;
+	}
+	#layout-content {
+		padding-left: 1.1em;
+		padding-right: 1.1em;
+		padding-top: 0.8em;
+	}
+}
+
 #fwtitle {
 	margin: 2px;
 }
