@@ -44,15 +44,9 @@ email: hoang.tranviet \[at\] u.nus.edu {{<span style="margin-left:15px;"></span>
 
 == *Research Interests*
 
-- *Symmetry of Parameter Space.* This research direction aims to completely characterize the symmetries inherent in modern neural architectures and to translate these theoretical insights into practical methodologies, including the  analysis of (linear) mode connectivity, the design of symmetry-respecting optimizers, and the development of equivariant metanetworks.
-
-\n
-
-- *Efficient methods based on Optimal Transport (OT).* Our research develops scalable OT-based techniques, with a particular focus on tree-sliced OT, a generalization of sliced OT that exploits closed-form solutions of OT problems on tree metric spaces. \n
-
 {{}}
 
-keywords: machine learning, parameter space symmetry, mode connectivity, metanetwork, optimal transport
+keywords: machine learning, parameter space symmetry, mode connectivity, metanetwork, neural conservation law
 
 
 
