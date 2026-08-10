@@ -462,12 +462,15 @@ summary { display: block; }
   color: #000;
   text-decoration: none;
   cursor: pointer;
-  padding: 0.35em 0.2em;
+  padding: 1px 4px;
+  border-radius: 3px;
 }
 
 .top-nav a:hover,
 .dropdown:hover .dropbtn {
-  color: #8c2d19; /* same reddish accent */
+  color: #000;
+  background-color: rgba(26, 13, 171, 0.08);
+  transition: background-color 0.15s ease;
 }
 
 .sep {
