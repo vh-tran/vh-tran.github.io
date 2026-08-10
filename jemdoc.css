@@ -14,26 +14,22 @@ table#tlayout {
 	padding-left: calc(15vw - 3em);
 	padding-right: calc(15vw - 3em);
     border: none;
-    background: #eceae5 /* rgb(234, 234, 234) */;      /* color_code */
-    text-align: left;
-    vertical-align: top;
+	background: #eceae5 /* rgb(234, 234, 234) */;      /* color_code */
+	text-align: left;
+	vertical-align: top;
 	color: #1A150E /* rgb(49, 49, 49) */;		/*text color*/     /* color_code */
-	text-align: justify;
-	
 }
 
 body {
 	background: #eceae5;
-	font-family: "Source Serif 4", /*"IM Fell English", */ "Cochin", Georgia, serif; /* "IM Fell Double Pica", "IM Fell Great Primer", "IM Fell DW Pica", */
+	font-family: "Source Serif 4", Georgia, serif;
 	padding-bottom: 0px;
 	margin: 0px;
 	font-size: 1.35em;
-	text-align: justify;
+	text-align: left;
 	/* scale: 1; */
 	/* width: ; */
 }
-
-body {text-align: justify;}
 
 /* nice font: Cochin, Trebuchet MS, Verdana, Geneva, fantasy */
 
@@ -234,7 +230,7 @@ ul, ol, dl {
 	margin-top: 0.2em;
 	padding-top: 0;
 	margin-bottom: 0.8em;
-	text-align: justify;
+	text-align: left;
 }
 
 dt {
@@ -480,7 +476,7 @@ summary { display: block; }
 
 @media screen and (max-width: 700px) {
 	body {
-		font-size: 1em;
+		font-size: 0.92em;
 		text-align: left;
 	}
 
@@ -501,13 +497,13 @@ summary { display: block; }
 	}
 
 	h1 {
-		font-size: 1.8em;
+		font-size: 1.7em;
 		line-height: 1.1;
 		padding-top: 1.15em;
 	}
 
 	h2 {
-		font-size: 1.35em;
+		font-size: 1.3em;
 		line-height: 1.15;
 		margin-bottom: 0.55em;
 	}
@@ -526,7 +522,8 @@ summary { display: block; }
 
 	.top-nav {
 		justify-content: flex-start;
-		gap: 0.55em;
+		gap: 0.45em;
+		margin-left: -0.35em;
 		padding-right: 0;
 		font-size: 1em;
 	}
