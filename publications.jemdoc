@@ -3,14 +3,16 @@
 # # jemdoc: menu{MENU}{publications.html}
 
 {{
-<div style="text-align:right;">
-<p>
-<a href="index.html"><font color="black">home</font></a>         <span style="margin-left:20px;"></span> | <span style="margin-left:20px;"></span>    <a href="publications.html"><font color="black">publications</font></a>    <span style="margin-left:20px;"></span> | <span style="margin-left:20px;"></span>   <a href="talks.html"><font color="black">talks</font></a>  <span style="margin-left:100px;"></span>
-</p>
-</div>
+<nav class="top-nav" aria-label="Primary navigation">
+<a href="index.html">home</a>
+<span class="sep" aria-hidden="true">|</span>
+<a href="publications.html" aria-current="page">publications</a>
+<span class="sep" aria-hidden="true">|</span>
+<a href="talks.html">talks</a>
+</nav>
 }}
 
-= *Viet-Hoang Tran {{<span style="margin-left:15px;"></span> }} | {{<span style="margin-left:15px;"></span> }} publications*
+= *Viet-Hoang Tran | publications*
 
 [https://scholar.google.com/citations?hl=en&user=HXsV5dQAAAAJ&view_op=list_works&sortby=pubdate Google Scholar] \n
 

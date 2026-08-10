@@ -3,11 +3,13 @@
 # # jemdoc: menu{MENU}{index.html}
 
 {{
-<div style="text-align:right;">
-<p>
-<a href="index.html"><font color="black">home</font></a>         <span style="margin-left:20px;"></span> | <span style="margin-left:20px;"></span>    <a href="publications.html"><font color="black">publications</font></a>    <span style="margin-left:20px;"></span> | <span style="margin-left:20px;"></span>   <a href="talks.html"><font color="black">talks</font></a>  <span style="margin-left:100px;"></span>
-</p>
-</div>
+<nav class="top-nav" aria-label="Primary navigation">
+<a href="index.html" aria-current="page">home</a>
+<span class="sep" aria-hidden="true">|</span>
+<a href="publications.html">publications</a>
+<span class="sep" aria-hidden="true">|</span>
+<a href="talks.html">talks</a>
+</nav>
 }}
 
 = *Viet-Hoang Tran*

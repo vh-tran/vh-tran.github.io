@@ -3,14 +3,16 @@
 # # jemdoc: menu{MENU}{talks.html}
 
 {{
-<div style="text-align:right;">
-<p>
-<a href="index.html"><font color="black">home</font></a>         <span style="margin-left:20px;"></span> | <span style="margin-left:20px;"></span>    <a href="publications.html"><font color="black">publications</font></a>    <span style="margin-left:20px;"></span> | <span style="margin-left:20px;"></span>   <a href="talks.html"><font color="black">talks</font></a>  <span style="margin-left:100px;"></span>
-</p>
-</div>
+<nav class="top-nav" aria-label="Primary navigation">
+<a href="index.html">home</a>
+<span class="sep" aria-hidden="true">|</span>
+<a href="publications.html">publications</a>
+<span class="sep" aria-hidden="true">|</span>
+<a href="talks.html" aria-current="page">talks</a>
+</nav>
 }}
 
-= *Viet-Hoang Tran {{<span style="margin-left:15px;"></span> }} | {{<span style="margin-left:15px;"></span> }} talks*
+= *Viet-Hoang Tran | talks*
 
 
 - *04/2026*. {{<a><b>Functional Equivalence in Neural Networks</b></a>}} \n 
@@ -39,4 +41,3 @@ Contributed talk. ICLR 2025 Weight Space Learning Workshop, Singapore
 
 - *10/2024*. {{<a><b>Algebraic Perspective of Neural Architecture</b></a>}} \n 
 Weekly Seminar, Department of ECE, Rice University, Houston
-
