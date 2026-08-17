@@ -9,7 +9,7 @@ html {
 table#tlayout {
     border: none;
     border-collapse: separate;
-    background: #eceae5;					/* color_code */
+    background: #d9d9d9;					/* color_code */
 }
 
 #layout-content {
@@ -18,14 +18,14 @@ table#tlayout {
 	padding-left: calc(15vw - 3em);
 	padding-right: calc(15vw - 3em);
     border: none;
-	background: #eceae5 /* rgb(234, 234, 234) */;      /* color_code */
+	background: #d9d9d9;      /* color_code */
 	text-align: left;
 	vertical-align: top;
 	color: #1A150E /* rgb(49, 49, 49) */;		/*text color*/     /* color_code */
 }
 
 body {
-	background: #eceae5;
+	background: #d9d9d9;
 	font-family: "Source Serif 4", Georgia, serif;
 	padding-bottom: 0px;
 	margin: 0px;
