@@ -473,6 +473,48 @@ summary { display: block; }
   transition: background-color 0.15s ease;
 }
 
+.publication-view {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.85em;
+	font-size: 85%;
+	color: #000;
+}
+
+.publication-view-option {
+	display: inline-flex;
+	align-items: center;
+	color: #000;
+	text-decoration: none;
+}
+
+.publication-view a,
+.publication-view a:link,
+.publication-view a:visited,
+.publication-view a:hover,
+.publication-view a:active {
+	color: #000;
+	text-decoration: none;
+}
+
+.publication-view-option.is-active {
+	font-weight: bold;
+}
+
+.publication-view-marker {
+	margin-right: 7px;
+	font-size: 0.82em;
+	font-weight: bold;
+	text-shadow: 0.7px 0 0 currentColor,
+		0.7px 0 0 currentColor,
+		0 0.7px 0 currentColor,
+		0 0.7px 0 currentColor;
+}
+
+.publication-view-separator {
+	color: #000;
+}
+
 .sep {
 	margin: 0;
 }

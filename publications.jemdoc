@@ -23,7 +23,7 @@
 
 \n
 
-{{<span style="font-size: 85%;">view: <b>by category</b> | <a href="publications-by-year.html">by year</a></span>}} \n
+{{<span class="publication-view" role="navigation" aria-label="Publication view"><span class="publication-view-option is-active" aria-current="page"><span class="publication-view-marker">&gt;</span> by category</span><span class="publication-view-separator" aria-hidden="true">|</span><a class="publication-view-option" href="publications-by-year.html"><span class="publication-view-marker">&gt;</span> by year</a></span>}} \n
 
 \n
 

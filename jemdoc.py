@@ -141,7 +141,7 @@ def standardconf():
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
   
   [defaultcss]
-  <link rel="stylesheet" href="jemdoc.css?v=20260810-6" type="text/css" />
+  <link rel="stylesheet" href="jemdoc.css?v=20260817-1" type="text/css" />
   
   [windowtitle]
   # used in header for window title.
