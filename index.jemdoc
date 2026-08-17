@@ -58,6 +58,8 @@ keywords: machine learning, parameter space symmetry, mode connectivity, metanet
 
 == *News*
 
+- *Aug 2026*. Amid the Math-AI hype, with help from GPT-5.6 Sol and Fable, we solved Bayart's formal power-series problem for Noetherian rings: if {{<i>R</i>[[<i>x</i>]]}} is a UFD, then so is {{<i>R</i>[[<i>x</i>,<i>y</i>]]}}. Preprint available [https://arxiv.org/abs/2608.12642 here].
+
 - *May 2026*. 3 papers accepted at ICML 2026:
 -- [https://arxiv.org/abs/2606.17816 *Conservation Laws for Modern Neural Architectures*] *(spotlight)*
 -- [https://arxiv.org/abs/2606.17830 *Functional Equivalence in Attention: A Comprehensive Study with Applications to Linear Mode Connectivity*]
