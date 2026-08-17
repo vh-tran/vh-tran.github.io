@@ -16,12 +16,14 @@
 
 [https://scholar.google.com/citations?hl=en&user=HXsV5dQAAAAJ&view_op=list_works&sortby=pubdate Google Scholar] \n
 
-view: *by category* | {{<a href="publications-by-year.html">by year</a>}} \n
-
 {{}}
 
 ¹  first\/co-first author \n
 ²  last\/co-last author \n
+
+\n
+
+{{<span style="font-size: 85%;">view: <b>by category</b> | <a href="publications-by-year.html">by year</a></span>}} \n
 
 \n
 

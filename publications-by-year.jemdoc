@@ -16,12 +16,14 @@
 
 [https://scholar.google.com/citations?hl=en&user=HXsV5dQAAAAJ&view_op=list_works&sortby=pubdate Google Scholar] \n
 
-view: {{<a href="publications.html">by category</a>}} | *by year* \n
-
 {{}}
 
 ¹  first\/co-first author \n
 ²  last\/co-last author \n
+
+\n
+
+{{<span style="font-size: 85%;">view: <a href="publications.html">by category</a> | <b>by year</b></span>}} \n
 
 \n
 
@@ -96,14 +98,17 @@ ICML 2025
 - [https://arxiv.org/abs/2410.04209 *Equivariant Neural Functional Networks for Transformers*] \n
 *Viet-Hoang Tran*¹, Thieu N. Vo¹, An Nguyen The¹, Tho Tran Huu, Minh-Khoi Nguyen-Nhat, Thanh Tran, Duy-Tung Pham, Tan Minh Nguyen² \n
 ICLR 2025 \n
+ICLR 2025 Workshop Weight Space Learning *(spotlight)*
 
 - [https://arxiv.org/abs/2503.11050 *Distance-Based Tree-Sliced Wasserstein Distance*] \n
 *Viet-Hoang Tran*¹, Khoi N.M. Nguyen¹, Trang Pham, Thanh T. Chu, Tam Le², Tan M. Nguyen² \n
 ICLR 2025 \n
+ICLR 2025 DeLTa Workshop
 
 - [https://arxiv.org/abs/2503.11249 *Spherical Tree-Sliced Wasserstein Distance*] \n
 *Viet-Hoang Tran*¹, Thanh T. Chu¹, Khoi N.M. Nguyen, Trang Pham, Tam Le², Tan M. Nguyen² \n
 ICLR 2025 \n
+ICLR 2025 DeLTa Workshop
 
 {{}}
 
