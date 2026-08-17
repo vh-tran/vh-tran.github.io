@@ -44,6 +44,13 @@ PAGES = {
         "canonical": f"{BASE_URL}/publications.html",
         "schema": "",
     },
+    "publications-by-year.html": {
+        "description": "Publications by Viet-Hoang Tran, organized by year.",
+        "keywords": "Viet-Hoang Tran publications by year, neural functional networks, tree-sliced Wasserstein distance, parameter space symmetry, NeurIPS, ICML, ICLR",
+        "og_title": "Viet-Hoang Tran | Publications by Year",
+        "canonical": f"{BASE_URL}/publications-by-year.html",
+        "schema": "",
+    },
     "talks.html": {
         "description": "Talks and presentations by Viet-Hoang Tran – Ph.D. student at the National University of Singapore. Invited talks at NeurIPS, ICLR, UCLA, Rice University, and other venues.",
         "keywords": "Viet-Hoang Tran talks, invited talks, machine learning seminar, NeurIPS oral, ICLR",

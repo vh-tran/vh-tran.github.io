@@ -1,4 +1,4 @@
-# jemdoc: title{Viet-Hoang Tran | publications}
+# jemdoc: title{Viet-Hoang Tran | publications by year}
 
 # # jemdoc: menu{MENU}{publications.html}
 
@@ -16,7 +16,7 @@
 
 [https://scholar.google.com/citations?hl=en&user=HXsV5dQAAAAJ&view_op=list_works&sortby=pubdate Google Scholar] \n
 
-view: *by category* | {{<a href="publications-by-year.html">by year</a>}} \n
+view: {{<a href="publications.html">by category</a>}} | *by year* \n
 
 {{}}
 
@@ -25,9 +25,12 @@ view: *by category* | {{<a href="publications-by-year.html">by year</a>}} \n
 
 \n
 
-{{<font color="black"> <span style="font-size: 80%;"> conference papers <span style="margin-left:7px;"></span> </span> 
+{{<font color="black"> <span style="font-size: 80%;"> 2026 <span style="margin-left:7px;"></span> </span>
                 </font>}}
 
+- [https://arxiv.org/abs/2608.12642 *The Noetherian Case of Bayart's Power-Series Question*] \n
+*Viet-Hoang Tran*¹, Dung V. Nguyen, Quang X. Nguyen, Thieu N. Vo, Tan M. Nguyen² \n
+preprint, 2026
 
 - [https://arxiv.org/abs/2606.17816 *Conservation Laws for Modern Neural Architectures*] \n
 *Viet-Hoang Tran*¹, Vinh Khanh Bui¹, Tan Lai Ngoc, Nam Nguyen, Tuan Dam, Tan M. Nguyen² \n
@@ -56,6 +59,15 @@ ICLR 2026
 - [https://openreview.net/forum?id=kDqG03v05B *Revisiting Tree-Sliced Wasserstein Distance Through the Lens of the Fermat-Weber Problem*] \n
 *Viet-Hoang Tran*¹, Thanh Tran¹, Thanh Chu¹, Duy-Tung Pham, Trung-Khang Tran, Tam Le², Tan Minh Nguyen² \n
 ICLR 2026
+
+- [https://openreview.net/forum?id=aUTKbAfgzn *Modeling Expert Interactions in Sparse Mixture of Experts via Graph Structures*] \n
+Minh-Khoi Nguyen-Nhat¹, Rachel S.Y. Teo, Laziz Abdullaev, Maurice Mok, *Viet-Hoang Tran*, Tan Minh Nguyen² \n
+AAAI 2026 Workshop MATH4AI
+
+{{}}
+
+{{<font color="black"> <span style="font-size: 80%;"> 2025 <span style="margin-left:7px;"></span> </span>
+                </font>}}
 
 - [https://arxiv.org/abs/2509.11348 *On Linear Mode Connectivity of Mixture-of-Experts Architectures*] \n
 *Viet-Hoang Tran*¹, Van Hoan Trinh¹, Khanh Vinh Bui¹, Tan M. Nguyen² \n
@@ -93,42 +105,15 @@ ICLR 2025 \n
 *Viet-Hoang Tran*¹, Thanh T. Chu¹, Khoi N.M. Nguyen, Trang Pham, Tam Le², Tan M. Nguyen² \n
 ICLR 2025 \n
 
+{{}}
+
+{{<font color="black"> <span style="font-size: 80%;"> 2024 <span style="margin-left:7px;"></span> </span>
+                </font>}}
+
 - [https://proceedings.neurips.cc/paper_files/paper/2024/hash/577cd5863ec73be4e6871340be0936ae-Abstract-Conference.html *Monomial Matrix Group Equivariant Neural Functional Networks*] \n
 *Viet-Hoang Tran*¹, Thieu N. Vo¹, Tho Tran-Huu, An T. Nguyen, Tan M. Nguyen² \n
 NeurIPS 2024
 
-{{}}
-
-{{<font color="black"> <span style="font-size: 80%;"> workshop papers <span style="margin-left:7px;"></span> </span> 
-                </font>}}
-
-- [https://openreview.net/forum?id=aUTKbAfgzn *Modeling Expert Interactions in Sparse Mixture of Experts via Graph Structures*] \n
-Minh-Khoi Nguyen-Nhat¹, Rachel S.Y. Teo, Laziz Abdullaev, Maurice Mok, *Viet-Hoang Tran*, Tan Minh Nguyen² \n
-AAAI 2026 Workshop MATH4AI
-
-- [https://arxiv.org/abs/2410.04209 *Equivariant Neural Functional Networks for Transformers*] \n
-*Viet-Hoang Tran*¹, Thieu N. Vo¹, An Nguyen The¹, Tho Tran Huu, Minh-Khoi Nguyen-Nhat, Thanh Tran, Duy-Tung Pham, Tan Minh Nguyen² \n
-ICLR 2025 Workshop Weight Space Learning *(spotlight)*
-
-- [https://arxiv.org/abs/2503.11050 *Distance-Based Tree-Sliced Wasserstein Distance*] \n
-*Viet-Hoang Tran*¹, Khoi N.M. Nguyen¹, Trang Pham, Thanh T. Chu, Tam Le², Tan M. Nguyen² \n
-ICLR 2025 DeLTa Workshop
-
-- [https://arxiv.org/abs/2503.11249 *Spherical Tree-Sliced Wasserstein Distance*] \n
-*Viet-Hoang Tran*¹, Thanh T. Chu¹, Khoi N.M. Nguyen, Trang Pham, Tam Le², Tan M. Nguyen² \n
-ICLR 2025 DeLTa Workshop \n
-
-
-{{}}
-
-{{<font color="black"> <span style="font-size: 80%;"> others <span style="margin-left:7px;"></span> </span> 
-                </font>}}
-
-- [https://arxiv.org/abs/2608.12642 *The Noetherian Case of Bayart's Power-Series Question*] \n
-*Viet-Hoang Tran*¹, Dung V. Nguyen, Quang X. Nguyen, Thieu N. Vo, Tan M. Nguyen² \n
-preprint, 2026
-
 - [https://arxiv.org/abs/2410.04692 *A Clifford Algebraic Approach to E(n)-Equivariant High-order Graph Neural Networks*] \n
 *Viet-Hoang Tran*¹, Thieu N. Vo¹, Tho Tran Huu, Tan Minh Nguyen² \n
 preprint, 2024
-
