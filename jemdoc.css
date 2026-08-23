@@ -3,29 +3,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,500;0,600;1,400&display=swap');
 
 html {
-	font-size: 85%;
+	font-size: 76.5%;
 }
 
 table#tlayout {
     border: none;
     border-collapse: separate;
-    background: #d9d9d9;					/* color_code */
+    background: #fceeed;					/* color_code */
 }
 
 #layout-content {
 	padding-top: 1em;
 	padding-bottom: 5em;
-	padding-left: calc(15vw - 3em);
-	padding-right: calc(15vw - 3em);
+	padding-left: 21vw;
+	padding-right: 21vw;
     border: none;
-	background: #d9d9d9;      /* color_code */
+	background: #fceeed;      /* color_code */
 	text-align: left;
 	vertical-align: top;
 	color: #1A150E /* rgb(49, 49, 49) */;		/*text color*/     /* color_code */
 }
 
 body {
-	background: #d9d9d9;
+	background: #fceeed;
 	font-family: "Source Serif 4", Georgia, serif;
 	padding-bottom: 0px;
 	margin: 0px;
@@ -456,7 +456,7 @@ summary { display: block; }
 	justify-content: flex-end;
 	align-items: center;
 	gap: 20px;
-	padding-right: 100px;
+	padding-right: 0;
 	font-size: 100%;
 	text-align: right;
 }
@@ -523,13 +523,17 @@ summary { display: block; }
 }
 
 @media screen and (max-width: 700px) {
+	html {
+		font-size: 85%;
+	}
+
 	body {
 		font-size: 0.92em;
 		text-align: left;
 	}
 
 	#layout-content {
-		padding: 0.75em 1.15em 3em;
+		padding: 0.75em 1.9em 3em;
 		text-align: left;
 	}
 
