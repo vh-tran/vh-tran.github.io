@@ -3,281 +3,339 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="An interactive guide to Conservation Laws for Modern Neural Architectures (ICML 2026): gradient-flow geometry, parameter-space level sets, and conserved quantities in SwiGLU, attention, RoPE, and Mixture-of-Experts." />
+<meta name="description" content="A visual, interactive guide to conservation laws in modern neural architectures." />
 <meta name="author" content="Viet-Hoang Tran" />
 <meta name="theme-color" content="#FCEEED" />
-<meta property="og:title" content="Conservation Laws for Modern Neural Architectures — interactive guide" />
-<meta property="og:description" content="Watch gradient trajectories move through parameter space while architectural quantities remain fixed." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://vh-tran.github.io/conservation-laws.html" />
-<link rel="canonical" href="https://vh-tran.github.io/conservation-laws.html" />
 <link rel="stylesheet" href="jemdoc.css?v=20260823-6" type="text/css" />
-<link rel="stylesheet" href="conservation-laws.css?v=20260823-2" type="text/css" />
-<script src="conservation-laws.js?v=20260823-2" defer></script>
-<title>Conservation Laws for Modern Neural Architectures</title>
+<link rel="stylesheet" href="conservation-laws.css?v=20260824-1" type="text/css" />
+<script src="conservation-laws.js?v=20260824-1" defer></script>
+<title>Conservation Laws — a visual guide</title>
 </head>
 <body class="project-page">
 <div id="layout-content">
 <nav class="top-nav" aria-label="Primary navigation">
-<a href="index.html">home</a>
-<span class="sep" aria-hidden="true">|</span>
-<a href="publications.html">publications</a>
-<span class="sep" aria-hidden="true">|</span>
+<a href="index.html">home</a><span class="sep" aria-hidden="true">|</span>
+<a href="publications.html">publications</a><span class="sep" aria-hidden="true">|</span>
 <a href="talks.html">talks</a>
 </nav>
 
 <main>
-<header class="paper-hero">
-<div class="paper-kicker">ICML 2026 spotlight · interactive paper guide</div>
-<h1>Conservation Laws for<br /> Modern Neural Architectures</h1>
-<p class="paper-lede">Training moves millions of parameters. Architecture can still force the motion to remain on a hidden geometric surface.</p>
+<header class="visual-hero">
+<div class="hero-copy">
+<p class="eyebrow">ICML 2026 spotlight · visual paper guide</p>
+<h1>Training moves.<br /><em>Some things don’t.</em></h1>
+<p class="hero-deck">Parameters can travel far while architecture keeps a hidden label locked.</p>
 <p class="paper-authors">Viet-Hoang Tran, Vinh Khanh Bui, Tan Lai Ngoc, Nam Nguyen, Tuan Dam, and Tan M. Nguyen</p>
-<div class="paper-actions" aria-label="Paper links">
-<a href="https://arxiv.org/abs/2606.17816" target="_blank" rel="noreferrer">paper</a>
+<div class="hero-actions">
+<a href="#toy-lab">play with the idea ↓</a>
 <span aria-hidden="true">·</span>
-<a href="https://arxiv.org/pdf/2606.17816" target="_blank" rel="noreferrer">pdf</a>
-<span aria-hidden="true">·</span>
-<a href="#parameter-lab">enter the parameter-space lab ↓</a>
+<a href="https://arxiv.org/abs/2606.17816" target="_blank" rel="noreferrer">read the paper ↗</a>
 </div>
-
-<div class="hero-space-wrap wide-breakout" aria-label="Animated parameter-space level sets">
-<canvas id="hero-space" class="hero-space" role="img" aria-label="Particles moving along hyperbolic level sets in a two-parameter space."></canvas>
-<div class="hero-space-caption"><span class="moving-dot" aria-hidden="true"></span> parameters move <span class="caption-rule" aria-hidden="true"></span> the conserved label does not</div>
 </div>
-
-<div class="hero-findings" aria-label="Paper at a glance">
-<div><span>01</span><strong>Complete characterizations</strong><small>not just isolated examples</small></div>
-<div><span>02</span><strong>Modern building blocks</strong><small>FFNs, attention, RoPE, MoE</small></div>
-<div><span>03</span><strong>Observed in training</strong><small>vision and language models</small></div>
+<div class="hero-lock" aria-label="Animated locked difference between two changing quantities">
+<div class="hero-lock-top">
+<span>both sides move</span>
+<span class="live-badge"><i aria-hidden="true"></i> live</span>
+</div>
+<div class="lock-bars">
+<div class="lock-row"><span>a²</span><div class="lock-track"><i id="hero-a-bar"></i></div><output id="hero-a-value">5.00</output></div>
+<div class="lock-row"><span>b²</span><div class="lock-track"><i id="hero-b-bar"></i></div><output id="hero-b-value">2.60</output></div>
+</div>
+<div class="lock-bracket" aria-hidden="true"><span></span><b>−</b><span></span></div>
+<div class="lock-result"><span>the gap stays locked</span><strong>a² − b² = <output id="hero-balance-value">2.40</output> <i>lock</i></strong></div>
 </div>
 </header>
 
-<section class="story-section" id="intuition">
-<div class="section-label">The idea</div>
-<h2>What stays still while everything learns?</h2>
-<div class="definition-grid">
+<section class="scene toy-scene" id="toy-lab">
+<div class="scene-heading">
 <div>
-<p>Gradient flow gives the instantaneous training motion. A conservation law is a function of the parameters whose value never changes along that motion.</p>
-<p class="quiet-note">Think of <i>h</i> as a label painted on parameter space: training may travel far, but it cannot cross into a differently labelled surface.</p>
+<p class="scene-number">01 · the whole idea in two parameters</p>
+<h2>Pick a start. Watch training find the only reachable finish.</h2>
 </div>
-<div class="formula-stack" aria-label="Gradient flow and conservation equations">
-<div class="formula-line"><span class="formula-name">motion</span><span>θ̇(t) = −∇L<sub>𝒟</sub>(θ(t))</span></div>
-<div class="formula-line is-accent"><span class="formula-name">invariant</span><span>h(θ(t)) = h(θ(0))</span></div>
+<div class="formula-chips" aria-label="Toy model formulas">
+<span>f = abx</span><span>L = ½(ab − y)²</span><span class="accent">h = a² − b² 🔒</span>
 </div>
+</div>
+
+<div class="toy-shell wide-breakout">
+<div class="toy-toolbar">
+<div class="button-group" aria-label="Animation controls">
+<button id="toy-play" type="button" class="primary-button">pause</button>
+<button id="toy-replay" type="button">replay</button>
+<button id="toy-new-start" type="button">new start</button>
+<button id="toy-forces" type="button" aria-pressed="true">forces on</button>
+</div>
+<div class="slider-pair">
+<label for="toy-target">target <output id="toy-target-output">1.20</output>
+<input id="toy-target" type="range" min="-1.5" max="2.5" step="0.05" value="1.2" /></label>
+<label for="toy-speed">speed <output id="toy-speed-output">1×</output>
+<input id="toy-speed" type="range" min="0.35" max="2.5" step="0.05" value="1" /></label>
+</div>
+</div>
+
+<div class="toy-stage">
+<canvas id="toy-canvas" role="img" aria-label="A point following a conserved hyperbola toward the zero-loss target curve. Drag anywhere to choose a new start."></canvas>
+<div class="stage-pills" aria-live="polite">
+<span>loss <strong id="toy-loss">0.058</strong> <i id="toy-loss-note">falling ↓</i></span>
+<span>h <strong id="toy-invariant">4.35</strong> <i>locked</i></span>
+</div>
+<div class="drag-tip">drag anywhere to choose a new start</div>
+</div>
+
+<div class="toy-footer">
+<div class="toy-legend">
+<span><i class="dot green"></i> training path</span>
+<span><i class="line red"></i> your conserved rail</span>
+<span><i class="line blue dotted"></i> zero loss</span>
+</div>
+<div class="micro-readouts">
+<span>drift <output id="toy-drift">0.00e+0</output></span>
+<span>flow time <output id="toy-time">0.0</output></span>
+</div>
+</div>
+</div>
+
+<div class="intuition-strip">
+<div><span class="intuition-icon rail-icon" aria-hidden="true"></span><strong>Initialization</strong><small>chooses the rail</small></div>
+<b aria-hidden="true">+</b>
+<div><span class="intuition-icon target-icon" aria-hidden="true"></span><strong>Data</strong><small>chooses the target</small></div>
+<b aria-hidden="true">→</b>
+<div class="finish-card"><span class="intuition-icon finish-icon" aria-hidden="true"></span><strong>The intersection</strong><small>selects the reachable solution</small></div>
 </div>
 </section>
 
-<section class="story-section parameter-lab" id="parameter-lab">
-<div class="section-label">Interactive example</div>
-<h2>A two-parameter training world</h2>
-<p class="section-intro">For the paper’s toy model <span class="inline-formula">f(x; a,b) = abx</span>, squared-loss gradient flow preserves <span class="inline-formula">h(a,b) = a² − b²</span>. This lab uses <span class="inline-formula">L = ½(ab−y)²</span>: watch the flow stay on its level set, then switch to discrete GD to see finite-step drift.</p>
-
-<div class="lab-shell wide-breakout">
-<div class="lab-toolbar" aria-label="Simulation controls">
-<div class="control-group">
-<span class="control-label">dynamics</span>
-<button type="button" class="mode-button is-active" data-mode="flow" aria-pressed="true">gradient flow</button>
-<button type="button" class="mode-button" data-mode="gd" aria-pressed="false">discrete GD</button>
+<section class="scene two-path-scene" id="two-path-lab">
+<div class="scene-heading">
+<div>
+<p class="scene-number">02 · the same idea, in two dimensions</p>
+<h2>Two vectors learn one dot product. Their fingerprint stays fixed.</h2>
 </div>
-<label class="range-control" for="target-slider">
-<span>target product <output id="target-output" for="target-slider">1.20</output></span>
-<input id="target-slider" type="range" min="-1.5" max="2.5" step="0.05" value="1.2" />
-</label>
-<details class="start-controls">
-<summary>starting point</summary>
-<div class="start-controls-grid">
-<label class="range-control" for="start-a-slider">
-<span>a(0) <output id="start-a-output" for="start-a-slider">2.20</output></span>
-<input id="start-a-slider" type="range" min="-3" max="3" step="0.05" value="2.2" />
-</label>
-<label class="range-control" for="start-b-slider">
-<span>b(0) <output id="start-b-output" for="start-b-slider">0.70</output></span>
-<input id="start-b-slider" type="range" min="-3" max="3" step="0.05" value="0.7" />
-</label>
+<div class="formula-chips" aria-label="Two-path model formulas">
+<span>u = (a,c), v = (b,d)</span><span>ŷ = u·v = ab + cd</span><span class="accent">uuᵀ − vvᵀ 🔒</span>
+</div>
+</div>
+
+<div class="toy-shell two-path-shell wide-breakout">
+<div class="toy-toolbar">
+<div class="button-group" aria-label="Two-path animation controls">
+<button id="two-path-play" type="button" class="primary-button">pause</button>
+<button id="two-path-replay" type="button">replay</button>
+<button id="two-path-new-start" type="button">new start</button>
+<button id="two-path-forces" type="button" aria-pressed="true">forces on</button>
+</div>
+<div class="slider-pair">
+<label for="two-path-target">target <output id="two-path-target-output">1.40</output>
+<input id="two-path-target" type="range" min="-2.5" max="3" step="0.05" value="1.4" /></label>
+<label for="two-path-speed">speed <output id="two-path-speed-output">1×</output>
+<input id="two-path-speed" type="range" min="0.35" max="2.5" step="0.05" value="1" /></label>
+</div>
+</div>
+
+<div class="two-path-stage">
+<canvas id="two-path-canvas" role="img" aria-label="Two draggable vectors turn and stretch until their dot product reaches a target, while their two-by-two Gram difference stays fixed. Drag either arrow tip to choose a new initialization."></canvas>
+<div class="stage-pills two-path-pills">
+<span>loss <strong id="two-path-loss">0.000</strong> <i id="two-path-loss-note">falling ↓</i></span>
+<span>u·v <strong id="two-path-output">0.00</strong></span>
+<span>matrix drift <strong id="two-path-drift">0.00e+0</strong> <i>locked</i></span>
+</div>
+<span class="sr-only" id="two-path-status" aria-live="polite"></span>
+<div class="drag-tip">drag either arrow tip</div>
+</div>
+
+<div class="two-path-footer">
+<div class="route-sum" aria-label="Current contribution from each route">
+<span><i class="route-dot route-one-dot"></i>x-pair ab <strong id="two-path-route-one">0.00</strong></span>
+<b aria-hidden="true">+</b>
+<span><i class="route-dot route-two-dot"></i>y-pair cd <strong id="two-path-route-two">0.00</strong></span>
+<b aria-hidden="true">=</b>
+<span class="route-total">dot product <strong id="two-path-total">0.00</strong></span>
+</div>
+<div class="matrix-readout" aria-label="Locked symmetric matrix values">
+<span>Δ₁₁ <output id="two-path-delta-11">0.00</output></span>
+<span>Δ₁₂ <output id="two-path-delta-12">0.00</output></span>
+<span>Δ₂₂ <output id="two-path-delta-22">0.00</output></span>
+</div>
+</div>
+
+<details class="parameter-access">
+<summary>set starting values precisely</summary>
+<div class="parameter-access-grid">
+<label for="two-path-a">a <output id="two-path-a-output">1.60</output><input id="two-path-a" type="range" min="-3" max="3" step="0.05" value="1.6" /></label>
+<label for="two-path-b">b <output id="two-path-b-output">0.10</output><input id="two-path-b" type="range" min="-3" max="3" step="0.05" value="0.1" /></label>
+<label for="two-path-c">c <output id="two-path-c-output">0.20</output><input id="two-path-c" type="range" min="-3" max="3" step="0.05" value="0.2" /></label>
+<label for="two-path-d">d <output id="two-path-d-output">1.40</output><input id="two-path-d" type="range" min="-3" max="3" step="0.05" value="1.4" /></label>
 </div>
 </details>
-<label class="range-control" id="step-control" for="step-slider" hidden>
-<span>step size <output id="step-output" for="step-slider">0.040</output></span>
-<input id="step-slider" type="range" min="0.005" max="0.12" step="0.005" value="0.04" />
-</label>
-<div class="lab-actions">
-<button type="button" id="play-button">pause</button>
-<button type="button" id="reset-button">reset</button>
-</div>
 </div>
 
-<div class="lab-visual">
-<canvas id="parameter-canvas" role="img" aria-label="A parameter plane showing gradient directions, level sets of a squared norm difference, and the optimizer trajectory."></canvas>
-<div class="canvas-hint">click or drag to move the initialization</div>
-</div>
-
-<div class="lab-readout" aria-live="polite">
-<div><span>loss</span><strong id="loss-value">—</strong></div>
-<div><span>a² − b² now</span><strong id="invariant-value">—</strong></div>
-<div><span>initial value</span><strong id="initial-invariant-value">—</strong></div>
-<div><span id="time-label">flow time</span><strong id="time-value">—</strong></div>
-</div>
-</div>
-
-<div class="geometry-note">
-<div class="right-angle-mark" aria-hidden="true"></div>
-<p><strong>Why the rail holds.</strong> The training direction is perpendicular to ∇h, so it is tangent to the current level set. In this model, <span class="inline-formula">d(a²−b²)/dt = 0</span> exactly under gradient flow. Each nonzero hyperbolic level set has separate branches; the characterization says a law is constant on each connected component.</p>
+<div class="two-path-intuition">
+<span><small>one path</small>a² − b²</span>
+<b aria-hidden="true">→</b>
+<span class="two-path-bridge-focus"><small>two paths</small>uuᵀ − vvᵀ</span>
+<b aria-hidden="true">→</b>
+<strong><small>attention</small>QᵀQ − KᵀK</strong>
 </div>
 </section>
 
-<section class="story-section" id="architecture-atlas">
-<div class="section-label">The main results</div>
-<h2>An atlas of modern architectures</h2>
-<p class="section-intro">Change the building block and the geometric rails change with it. Select an architecture to see a low-dimensional projection of the exact invariant stated alongside it.</p>
-
-<div class="atlas-shell wide-breakout">
-<div class="atlas-tabs" role="tablist" aria-label="Choose an architecture">
-<button type="button" id="architecture-tab-gelu" role="tab" data-architecture="gelu" aria-controls="architecture-panel" aria-selected="false">GELU / SiLU</button>
-<button type="button" id="architecture-tab-swiglu" role="tab" data-architecture="swiglu" aria-controls="architecture-panel" aria-selected="true" class="is-active">SwiGLU</button>
-<button type="button" id="architecture-tab-mha" role="tab" data-architecture="mha" aria-controls="architecture-panel" aria-selected="false">multihead attention</button>
-<button type="button" id="architecture-tab-rope" role="tab" data-architecture="rope" aria-controls="architecture-panel" aria-selected="false">RoPE</button>
-<button type="button" id="architecture-tab-moe" role="tab" data-architecture="moe" aria-controls="architecture-panel" aria-selected="false">Mixture-of-Experts</button>
+<section class="scene architecture-scene" id="architecture-locks">
+<div class="scene-heading">
+<div>
+<p class="scene-number">03 · from the toy to modern architectures</p>
+<h2>Different blocks. One visual rule: something moves, something stays.</h2>
+</div>
+<p class="scene-side-note">Choose a block. Follow the moving colors, then find the lock.</p>
 </div>
 
-<div class="atlas-grid">
-<div class="atlas-visual">
-<canvas id="architecture-canvas" role="img" aria-label="Animated low-dimensional projection of the selected architecture's conserved parameter geometry."></canvas>
-<button type="button" id="atlas-play-button" class="canvas-control">pause animation</button>
+<div class="architecture-shell wide-breakout">
+<div class="visual-tabs" role="tablist" aria-label="Architecture">
+<button type="button" class="is-active" role="tab" aria-selected="true" data-arch="mha">MHA</button>
+<button type="button" role="tab" aria-selected="false" data-arch="rope">MHA + RoPE</button>
+<button type="button" role="tab" aria-selected="false" data-arch="moe">softmax MoE</button>
+<span class="schematic-badge">one idea per tab · exact formula below</span>
 </div>
-<article class="atlas-copy" id="architecture-panel" role="tabpanel" aria-labelledby="architecture-tab-swiglu" aria-live="polite" tabindex="0">
-<div id="architecture-kicker" class="architecture-kicker">multiplicative balance</div>
-<h3 id="architecture-title">SwiGLU keeps each A/C balance</h3>
-<p id="architecture-summary">For every hidden unit, the output-side column and gate-side row can change substantially while their difference of squared norms stays fixed.</p>
-<div id="architecture-formula" class="architecture-formula">‖A<sub>:,i</sub>‖² − ‖C<sub>i,:</sub>‖² = constant</div>
-<p id="architecture-meaning" class="architecture-meaning">The moving point is a signed scalar cross-section of that vector-parameter balance. B can move during training; the characterization says a nonconstant conservation law cannot depend on B.</p>
-</article>
+<div class="architecture-grid">
+<div class="architecture-stage">
+<canvas id="architecture-canvas" role="img" aria-label="Schematic animation of parameter blocks moving while an architecture-specific quantity remains fixed."></canvas>
+<div class="canvas-corner-label" id="architecture-corner">full Gram difference</div>
 </div>
+<aside class="architecture-copy" aria-live="polite">
+<div class="architecture-summary">
+<div><p class="mini-kicker" id="architecture-kicker">multi-head attention</p>
+<h3 id="architecture-title">The vector lock becomes a matrix lock.</h3></div>
+<button class="replay-link" id="architecture-replay" type="button">replay motion ↻</button>
 </div>
-<p class="visual-caveat">The atlas shows schematic allowed motion on low-dimensional invariant leaves, not optimizer simulations. Signed scalar slices may stand in for vector or matrix parameters; the displayed formulas—not the drawings—state the results within the paper’s scope.</p>
-</section>
-
-<section class="story-section proof-section" id="proof-lens">
-<div class="section-label">The proof lens</div>
-<h2>From every input to parameter-only constraints</h2>
-<p class="section-intro">The hard part is removing the input <i>x</i> from an infinite family of orthogonality conditions. For the smooth blocks, the paper uses meromorphic structure; sparse Top-k routing adds a connectivity argument across routing regions.</p>
-
-<div class="proof-equation">
-<span>for every admissible x ∈ X<sub>θ</sub> and output i</span>
-<strong>⟨∇<sub>θ</sub>h(θ), ∇<sub>θ</sub>f<sub>i</sub>(x;θ)⟩ = 0</strong>
+<div class="architecture-ledger">
+<div class="architecture-definition" id="architecture-definition">moving: Qᵢ and Kᵢ</div>
+<div class="architecture-lock-formula" id="architecture-formula">
+<span>QᵢᵀQᵢ − KᵢᵀKᵢ = constant</span>
+<span>also: VᵢᵀVᵢ − OᵢᵀOᵢ = constant</span>
 </div>
-
-<div class="proof-flow" id="proof-flow">
-<article class="proof-step is-active" data-proof-step="0">
-<span>1</span>
-<h3>Orthogonality</h3>
-<p>Every allowable update direction lies tangent to a level set of h.</p>
-</article>
-<div class="proof-connector" aria-hidden="true"></div>
-<article class="proof-step" data-proof-step="1">
-<span>2</span>
-<h3>Analytic continuation</h3>
-<p>Restrict x to a line, extend it to a complex variable, and use the identity theorem.</p>
-</article>
-<div class="proof-connector" aria-hidden="true"></div>
-<article class="proof-step" data-proof-step="2">
-<span>3</span>
-<h3>Read the poles</h3>
-<p>Dominant pole orders isolate coefficients and expose parameter-only PDE constraints.</p>
-</article>
+<p id="architecture-caption">Every cell in the Gram difference stays fixed.</p>
 </div>
-
-<p class="proof-boundary"><strong>Where the lens currently stops.</strong> Deep compositions and LayerNorm can introduce branch points or essential singularities, so the meromorphic argument does not extend to them directly.</p>
-</section>
-
-<section class="story-section" id="discrete-lab">
-<div class="section-label">From flow to optimization steps</div>
-<h2>Exact in continuous time; nearly conserved in steps</h2>
-<p class="section-intro">For a nonlinear law such as the toy balance, an Euler gradient-descent step has no first-order conservation drift; its remainder is second order in the step size. Replay the toy system and change the step size or schedule.</p>
-
-<div class="discrete-shell wide-breakout">
-<div class="discrete-controls">
-<div class="control-group" role="group" aria-label="Learning-rate schedule">
-<span class="control-label">schedule</span>
-<button type="button" class="schedule-button is-active" data-schedule="constant" aria-pressed="true">constant τ</button>
-<button type="button" class="schedule-button" data-schedule="decay" aria-pressed="false">τ₀/(k+1)</button>
+</aside>
 </div>
-<label class="range-control" for="error-step-slider">
-<span>initial step τ₀ <output id="error-step-output" for="error-step-slider">0.050</output></span>
-<input id="error-step-slider" type="range" min="0.005" max="0.12" step="0.005" value="0.05" />
-</label>
-<button type="button" id="replay-error-button">replay</button>
-</div>
-<canvas id="error-canvas" role="img" aria-label="Animated chart of absolute conservation error over gradient-descent iterations."></canvas>
-<div class="error-readout" aria-live="polite">
-<div><span>iteration</span><strong id="error-iteration">0</strong></div>
-<div><span>absolute drift</span><strong id="error-drift">0</strong></div>
-<div><span>Σ τₖ²</span><strong id="error-driver">0</strong></div>
-</div>
-</div>
-
-<div class="bound-line">
-<span class="bound-label">exact identity in this toy lab</span>
-<span class="bound-formula">h<sub>k+1</sub> = [1 − τ<sub>k</sub>²(a<sub>k</sub>b<sub>k</sub>−y)²] h<sub>k</sub></span>
-</div>
-<div class="bound-line">
-<span class="bound-label">bound used in the paper</span>
-<span class="bound-formula">𝔼|h(θ<sub>k</sub>)−h(θ<sub>0</sub>)| ≤ (C<sub>h</sub>C<sub>L</sub>/2) Σ<sub>i&lt;k</sub> τ<sub>i</sub>²</span>
-</div>
-<p class="visual-caveat">This chart is a synthetic run of the exact two-parameter example, not experimental data from the paper. With a uniformly bounded Hessian for h and a bounded expected squared stochastic-gradient norm, the paper controls expected absolute drift by Στ<sub>i</sub>²; its architecture experiments show learning-rate ordering consistent with that bound. Affine laws such as the softmax-router sum remain exact under ideal GD or SGD arithmetic.</p>
-</section>
-
-<section class="story-section results-section" id="results">
-<div class="section-label">What the characterization says</div>
-<h2>One framework, sharply different answers</h2>
-<div class="result-list">
-<div><span>GELU &amp; SiLU FFNs</span><strong>only constant universal C¹ laws</strong><small>for the one-hidden-layer, bias-free blocks studied</small></div>
-<div><span>SwiGLU</span><strong>A/C squared-norm balances</strong><small>one balance for every hidden unit</small></div>
-<div><span>vanilla MHA + sinusoidal PE</span><strong>Q/K and V/O Gram differences</strong><small>sinusoidal input shifts preserve the vanilla structure</small></div>
-<div><span>RoPE attention</span><strong>blockwise Q/K Frobenius + V/O Gram balances</strong><small>rotation blocks change the query/key invariant geometry</small></div>
-<div><span>softmax MoE</span><strong>expert balances + fixed sum across router rows</strong><small>dense softmax and renormalized Top-k softmax with k &gt; 1 share the paper’s stated constraints</small></div>
 </div>
 </section>
 
-<section class="story-section scope-section" id="scope">
-<div class="section-label">Read the result precisely</div>
-<h2>What “complete” means here</h2>
-<div class="scope-grid">
-<details open>
-<summary>Exact object being characterized</summary>
-<p>C¹ functions conserved by Euclidean gradient flow for every dataset and initialization, under a full-span regression-loss assumption. This isolates invariants forced by architecture and optimizer geometry rather than by one dataset.</p>
+<section class="scene experiment-scene" id="experiments">
+<div class="scene-heading">
+<div>
+<p class="scene-number">04 · what the experiments show</p>
+<h2>Smaller steps keep the law tighter.</h2>
+</div>
+<p class="scene-side-note">Three learning rates race across training; the protected signal stays near zero.</p>
+</div>
+
+<div class="experiment-shell wide-breakout">
+<div class="visual-tabs" role="tablist" aria-label="Experiment architecture">
+<button type="button" class="is-active" role="tab" aria-selected="true" data-experiment="mha">MHA</button>
+<button type="button" role="tab" aria-selected="false" data-experiment="rope">RoPE</button>
+<button type="button" role="tab" aria-selected="false" data-experiment="moe">softmax MoE</button>
+<span class="schematic-badge">schematic trend · setup from Figure 2</span>
+</div>
+<div class="experiment-grid">
+<div class="chart-stage">
+<canvas id="experiment-canvas" role="img" aria-label="Animated normalized conservation error for three learning rates and ten runs."></canvas>
+<div class="chart-playhead" id="experiment-playhead"><span></span></div>
+</div>
+<aside class="experiment-key">
+<div class="experiment-meta"><p class="mini-kicker">training setup</p>
+<strong id="experiment-dataset">ImageNet-1K</strong><span> · </span><span id="experiment-block">multi-head attention</span><span> · 10 runs</span></div>
+<div class="learning-rates" id="experiment-rates" aria-label="Learning rates">
+<span><i class="rate-one"></i>10⁻³</span>
+<span><i class="rate-two"></i>2×10⁻³</span>
+<span><i class="rate-three"></i>3×10⁻³</span>
+</div>
+<p class="honesty-note">Exact dataset and rates; curves recreate the reported trend and are not digitized measurements.</p>
+<button class="replay-link" id="experiment-replay" type="button">replay traces ↻</button>
+</aside>
+</div>
+</div>
+</section>
+
+<section class="scene comparison-scene" id="comparison">
+<div class="scene-heading">
+<div>
+<p class="scene-number">05 · the control experiment</p>
+<h2>Same training. One quantity stays; one moves.</h2>
+</div>
+<p class="scene-side-note">A shared scale makes the difference impossible to miss.</p>
+</div>
+
+<div class="comparison-shell wide-breakout">
+<div class="visual-tabs" role="tablist" aria-label="Comparison architecture">
+<button type="button" class="is-active" role="tab" aria-selected="true" data-comparison="mha">MHA</button>
+<button type="button" role="tab" aria-selected="false" data-comparison="rope">RoPE</button>
+<button type="button" role="tab" aria-selected="false" data-comparison="moe">softmax MoE</button>
+<span class="schematic-badge">conceptual control · quantities from Figure 5</span>
+</div>
+<div class="comparison-overlay-stage">
+<canvas id="comparison-canvas" role="img" aria-label="Conserved and non-conserved quantities plotted together from the same starting value on one shared scale."></canvas>
+</div>
+<div class="comparison-caption">
+<span class="compare-formula conserved-formula"><i></i><b>conserved</b> <output id="conserved-formula">QᵀQ − KᵀK</output></span>
+<span class="compare-formula control-formula"><i></i><b>control</b> <output id="control-formula">QᵀQ + KᵀK</output></span>
+<span>same optimizer · same model · same start</span>
+<button class="replay-link" id="comparison-replay" type="button">replay comparison ↻</button>
+</div>
+</div>
+</section>
+
+<section class="scene takeaway-scene" id="takeaway">
+<div class="takeaway-copy">
+<p class="scene-number">06 · one last experiment</p>
+<h2>Same data. Same initial prediction. Different finish.</h2>
+<p class="takeaway-deck">Two mirrored starts are equally wrong. Train them together and watch initialization break the tie.</p>
+</div>
+
+<div class="takeaway-lab wide-breakout" id="takeaway-lab">
+<div class="takeaway-toolbar">
+<div class="twin-starts" aria-label="Two runs with the same initial prediction and loss">
+<span class="twin-a"><i>A</i><small>start (1.60, 0.25)</small><strong>h = +2.50 🔒</strong></span>
+<span class="twin-b"><i>B</i><small>start (0.25, 1.60)</small><strong>h = −2.50 🔒</strong></span>
+</div>
+<button class="replay-link" id="takeaway-replay" type="button">replay both ↻</button>
+</div>
+
+<div class="takeaway-plot">
+<canvas id="takeaway-canvas" role="img" aria-label="Two mirrored training runs start with the same prediction and loss, follow different conserved curves, and stop at different parameter values on the same zero-loss target curve."></canvas>
+<div class="takeaway-live">
+<span>both predict <strong id="takeaway-output">0.40</strong></span>
+<span>both loss <strong id="takeaway-loss">0.320</strong></span>
+</div>
+</div>
+
+<div class="takeaway-scrubber">
+<label for="takeaway-progress">training progress
+<input id="takeaway-progress" type="range" min="0" max="1" step="0.002" value="0" /></label>
+<span>same data target <strong>ab = 1.20</strong></span>
+</div>
+
+<div class="takeaway-verdict" id="takeaway-verdict" aria-live="polite">
+<span class="twin-a"><i></i>A stops at <output id="takeaway-finish-a">(1.73, 0.69)</output></span>
+<strong><span>same final loss = 0</span><b>different parameters</b></strong>
+<span class="twin-b"><i></i>B stops at <output id="takeaway-finish-b">(0.69, 1.73)</output></span>
+</div>
+</div>
+
+<div class="takeaway-close">
+<p>Initialization still gets a vote.</p>
+<div class="takeaway-actions">
+<a href="https://arxiv.org/abs/2606.17816" target="_blank" rel="noreferrer">paper ↗</a>
+<a href="https://arxiv.org/pdf/2606.17816" target="_blank" rel="noreferrer">pdf ↗</a>
+</div>
+</div>
+</section>
+
+<details class="scope-drawer">
+<summary>assumptions, scope, and what the animations mean</summary>
+<p>The laws are exact for continuous-time gradient flow. Finite optimization steps can drift at second order under smoothness assumptions. Architecture animations are schematic level-set motion; experiment traces are simplified visual summaries of the paper’s reported trends.</p>
 </details>
-<details>
-<summary>Gradient flow versus SGD</summary>
-<p>The laws are exact in continuous time. With a uniformly bounded Hessian for h and a bounded expected squared stochastic-gradient norm, nonlinear laws can accumulate controlled finite-step drift; the affine softmax-router sum remains exact in ideal arithmetic. The experiments use zero weight decay, with full-batch GD and mini-batch SGD testing near-conservation.</p>
-</details>
-<details>
-<summary>Architectural scope</summary>
-<p>The feedforward and expert results concern single-hidden-layer, bias-free blocks. The page’s MoE animation uses dense softmax gating. The paper states its sparse result for renormalized Top-k softmax with k &gt; 1; the appendix density argument also invokes d &gt; n, although that condition is not listed in the theorem statement.</p>
-</details>
-<details>
-<summary>Attention scope</summary>
-<p>The characterization covers the paper’s bias-free standalone MHA while its completeness proof varies sequence length. Sinusoidal position encodings are fixed additive inputs. RoPE uses even head dimension and the stated standard non-aliased frequency schedule. Masks, attention biases, learned position encodings, residual paths, LayerNorm, and stacked Transformers are not characterized by these theorems.</p>
-</details>
-<details>
-<summary>Level-set topology</summary>
-<p>“Determined by an invariant” means constant on each connected component of its level sets. Disconnected branches can carry different values even when the scalar invariant is the same.</p>
-</details>
-</div>
-</section>
-
-<section class="story-section closing-section">
-<div class="closing-rule" aria-hidden="true"></div>
-<p>Optimization is not free to wander everywhere. The architecture quietly decides which directions are available—and which quantities ideal gradient flow cannot change.</p>
-<div class="paper-actions">
-<a href="https://arxiv.org/abs/2606.17816" target="_blank" rel="noreferrer">read the paper ↗</a>
-<span aria-hidden="true">·</span>
-<a href="#parameter-lab">run the lab again ↑</a>
-</div>
-</section>
 </main>
 
-<footer class="paper-footer">
-<span>Interactive guide to</span> <a href="https://arxiv.org/abs/2606.17816" target="_blank" rel="noreferrer">arXiv:2606.17816</a>
+<footer class="site-footer">
+<span>Conservation Laws for Modern Neural Architectures · ICML 2026</span>
+<span>built for intuition, with fewer words</span>
 </footer>
 </div>
 </body>
