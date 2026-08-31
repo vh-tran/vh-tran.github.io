@@ -6,7 +6,7 @@
 <nav class="top-nav" aria-label="Primary navigation">
 <a href="index.html" aria-current="page">home</a>
 <span class="sep" aria-hidden="true">|</span>
-<a href="publications.html">publications</a>
+<a href="publications-by-year.html">publications</a>
 <span class="sep" aria-hidden="true">|</span>
 <a href="talks.html">talks</a>
 </nav>
@@ -62,7 +62,10 @@ keywords: machine learning, parameter space symmetry, mode connectivity, neural 
 
 == *News*
 
-- *Aug 2026*. Amid the Math-AI hype, with help from GPT-5.6 Sol and Fable, we solved Bayart's formal power-series problem: If {{<i>R</i>}} is Noetherian and {{<i>R</i>[[<i>x</i>]]}} is a UFD, then so is {{<i>R</i>[[<i>x</i>,<i>y</i>]]}}. Preprint available [https://arxiv.org/abs/2608.12642 here].
+- *Aug 2026*. Amid the Math-AI hype, with help from GPT-5.6 Sol, Claude Fable 5, and our agentic harness built around these models, we explored several open problems and obtained the following results. All three papers are preprints and have not yet been peer reviewed:
+-- *The Noetherian case of Bayart's power-series question.* If {{<i>R</i>}} is a commutative Noetherian ring and {{<i>R</i>[[<i>x</i>]]}} is a UFD, then {{<i>R</i>[[<i>x</i>,<i>y</i>]]}} is also a UFD. Preprint available [https://arxiv.org/abs/2608.12642 here]. The question for arbitrary domains, without the Noetherian assumption, remains open.
+-- *Polynomial extensions of SFT rings.* Must {{<i>R</i>[<i>x</i>]}} be SFT whenever {{<i>R</i>}} is a commutative SFT ring? Positive results were known under additional hypotheses; we answer the general question negatively by constructing a one-dimensional local SFT domain {{<i>R</i>}} for which {{<i>R</i>[<i>x</i>]}} is not SFT. Preprint available [https://arxiv.org/abs/2608.26044 here].
+-- *A new six-vertex Erdős-Hajnal case.* Up to isomorphism, the 26 prime graphs on six vertices form 13 complementary pairs. Four pairs were previously known to have the Erdős-Hajnal property---two through published or accepted results and two through a preprint. We establish a fifth pair by proving the property for the graph with edge set \{ab,bc,cd,de,af,bf,df\}. Preprint available [https://arxiv.org/abs/2608.28551 here].
 
 - *May 2026*. 3 papers accepted at ICML 2026:
 -- [https://arxiv.org/abs/2606.17816 *Conservation Laws for Modern Neural Architectures*] *(spotlight)*
@@ -178,7 +181,7 @@ ICLR 2025 \n
 {{}}
 
 {{
-<a href="publications.html">
+<a href="publications-by-year.html">
 <font color="black"> <span style="font-size: 0.7em; font-weight: bold;text-shadow: 0.7px 0 0 currentColor,
                  0.7px 0 0 currentColor,
                  0 0.7px 0 currentColor,

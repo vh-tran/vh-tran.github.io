@@ -6,7 +6,7 @@
 <nav class="top-nav" aria-label="Primary navigation">
 <a href="index.html">home</a>
 <span class="sep" aria-hidden="true">|</span>
-<a href="publications.html" aria-current="page">publications</a>
+<a href="publications-by-year.html" aria-current="page">publications</a>
 <span class="sep" aria-hidden="true">|</span>
 <a href="talks.html">talks</a>
 </nav>
@@ -23,7 +23,7 @@
 
 \n
 
-{{<span class="publication-view" role="navigation" aria-label="Publication view" style="color: black;"><span class="publication-view-option is-active" aria-current="page"><span class="publication-view-marker">&gt;</span> <b>by category</b></span><span class="publication-view-separator" aria-hidden="true">|</span><a class="publication-view-option" href="publications-by-year.html" style="color: black; text-decoration: none;"><span class="publication-view-marker">&gt;</span> by year</a></span>}} \n
+{{<span class="publication-view" role="navigation" aria-label="Publication view" style="color: black;"><a class="publication-view-option" href="publications-by-year.html" style="color: black; text-decoration: none;"><span class="publication-view-marker">&gt;</span> by year</a><span class="publication-view-separator" aria-hidden="true">|</span><span class="publication-view-option is-active" aria-current="page"><span class="publication-view-marker">&gt;</span> <b>by category</b></span></span>}} \n
 
 \n
 
@@ -123,11 +123,19 @@ ICLR 2025 DeLTa Workshop \n
 
 {{}}
 
-{{<font color="black"> <span style="font-size: 80%;"> others <span style="margin-left:7px;"></span> </span> 
+{{<font color="black"> <span style="font-size: 80%;"> others <span style="margin-left:7px;"></span> </span>
                 </font>}}
 
+- [https://arxiv.org/abs/2608.28551 *The Erdős-Hajnal Property for the six-vertex Graph with Edge Set \{ab,bc,cd,de,af,bf,df\}*] \n
+*Viet-Hoang Tran*, Tan M. Nguyen \n
+preprint, 2026
+
+- [https://arxiv.org/abs/2608.26044 *Polynomial extensions do not preserve the strong finite type property*] \n
+*Viet-Hoang Tran*, Phan Thanh Toan, Thieu N. Vo, Tan M. Nguyen \n
+preprint, 2026
+
 - [https://arxiv.org/abs/2608.12642 *The Noetherian Case of Bayart's Power-Series Question*] \n
-*Viet-Hoang Tran*¹, Dung V. Nguyen, Quang X. Nguyen, Thieu N. Vo, Tan M. Nguyen² \n
+*Viet-Hoang Tran*, Dung V. Nguyen, Quang X. Nguyen, Thieu N. Vo, Tan M. Nguyen \n
 preprint, 2026
 
 - [https://arxiv.org/abs/2410.04692 *A Clifford Algebraic Approach to E(n)-Equivariant High-order Graph Neural Networks*] \n
