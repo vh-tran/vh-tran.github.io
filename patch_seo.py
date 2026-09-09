@@ -36,6 +36,7 @@ PAGES = {
   "email": "hoang.tranviet@u.nus.edu"
 }}
 </script>""".format(base=BASE_URL),
+        "extra_head": """<script id="MathJax-script" defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>""",
     },
     "publications.html": {
         "description": "Publications by Viet-Hoang Tran – Ph.D. student at the National University of Singapore. Papers at NeurIPS, ICML, ICLR on neural functional networks, parameter space symmetry, and optimal transport.",
@@ -57,6 +58,14 @@ PAGES = {
         "og_title": "Viet-Hoang Tran | Talks",
         "canonical": f"{BASE_URL}/talks.html",
         "schema": "",
+    },
+    "ai-in-maths.html": {
+        "description": "AI-assisted mathematics preprints by Viet-Hoang Tran, with titles and abstracts in commutative algebra and combinatorics.",
+        "keywords": "Viet-Hoang Tran, AI in mathematics, AI-assisted mathematics, mathematical reasoning, commutative algebra, combinatorics, preprints",
+        "og_title": "Viet-Hoang Tran | AI in maths",
+        "canonical": f"{BASE_URL}/ai-in-maths.html",
+        "schema": "",
+        "extra_head": """<script id="MathJax-script" defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>""",
     },
 }
 
@@ -83,6 +92,9 @@ for filename, meta in PAGES.items():
 
     if meta["schema"]:
         tags += "\n" + meta["schema"]
+
+    if meta.get("extra_head"):
+        tags += "\n" + meta["extra_head"]
 
     html = html.replace(INJECT_MARKER, INJECT_MARKER + "\n" + tags)
 

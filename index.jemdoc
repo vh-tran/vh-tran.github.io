@@ -9,6 +9,8 @@
 <a href="publications-by-year.html">publications</a>
 <span class="sep" aria-hidden="true">|</span>
 <a href="talks.html">talks</a>
+<span class="sep" aria-hidden="true">|</span>
+<a href="ai-in-maths.html">AI in maths</a>
 </nav>
 }}
 
@@ -19,7 +21,7 @@
 
 
 
-I'm currently a fourth-year Ph.D. student in the [https://www.math.nus.edu.sg/ Department of Mathematics], [https://nus.edu.sg/ National University of Singapore].
+I'm a final-year Ph.D. student in the [https://www.math.nus.edu.sg/ Department of Mathematics] at the [https://nus.edu.sg/ National University of Singapore] (expected to graduate this October).
 
 \n
 
@@ -31,7 +33,7 @@ I began my Ph.D. in August 2022 in Mathematics. In September 2023, I shifted my 
 
 \n
 
-Previously, I completed an Honors degree in Mathematics at the [https://english.hus.vnu.edu.vn/ Hanoi University of Science] (2018-2022). \n
+I completed an Honors degree in Mathematics at the [https://english.hus.vnu.edu.vn/ Hanoi University of Science] (2018-2022). \n
 
 \n
 
@@ -46,13 +48,8 @@ email: hoang.tranviet \[at\] u.nus.edu {{<span style="margin-left:15px;"></span>
 
 == *Research Interests*
 
-- My research focuses on symmetries in neural networks: understanding how distinct parameter configurations can represent the same function and characterizing the relationships between them. I am also interested in applications of these symmetries, including equivariant metanetworks, neural conservation laws, linear mode connectivity up to symmetry, and model merging.
-
-- I am also interested in AI-assisted mathematical reasoning and theorem proving, and, more broadly, in understanding the reasoning capabilities and limitations of LLMs.
-
-{{}}
-
-keywords: machine learning, parameter space symmetry, mode connectivity, neural conservation law, metanetwork
+- I study *symmetries in neural networks*, which boils down to one question: {{<span class="research-followup">}}/Given a model $f$, if two parameter settings $\theta$ and $\bar{\theta}$ represent the same function, i.e., $f_{\theta} \equiv f_{\bar{\theta}}$, how are $\theta$ and $\bar{\theta}$ related?/{{</span>}} {{<span class="research-followup">These symmetries have all sorts of applications, including understanding implicit bias through neural conservation laws, symmetry-aware optimization and quantization, equivariant metanetworks, mode connectivity up to symmetry, and more.</span>}}
+- Recently, I've also become interested in using AI to tackle math problems, mostly related to commutative algebra and algebraic geometry. Partly for fun and curiosity, but more importantly, as a way to better understand what LLMs can and can't do in mathematical reasoning. {{<span class="research-followup">I share my thoughts and progress <a href="ai-in-maths.html">here</a>.</span>}}
 
 
 

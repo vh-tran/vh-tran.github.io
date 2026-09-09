@@ -2,5 +2,6 @@ python jemdoc.py index.jemdoc
 python jemdoc.py publications.jemdoc
 python jemdoc.py publications-by-year.jemdoc
 python jemdoc.py talks.jemdoc
+python jemdoc.py ai-in-maths.jemdoc
 python patch_seo.py
 start index.html

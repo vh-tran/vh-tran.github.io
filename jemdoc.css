@@ -212,6 +212,11 @@ p {
 	line-height: 1.3;
 }
 
+.research-followup {
+	display: block;
+	margin-top: 0.45em;
+}
+
 pre {
 	padding: 0;
 	margin: 0;
@@ -453,6 +458,7 @@ summary { display: block; }
 
 .top-nav {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: flex-end;
 	align-items: center;
 	gap: 20px;

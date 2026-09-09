@@ -1,0 +1,74 @@
+# jemdoc: title{Viet-Hoang Tran | AI in maths}
+
+{{
+<nav class="top-nav" aria-label="Primary navigation">
+<a href="index.html">home</a>
+<span class="sep" aria-hidden="true">|</span>
+<a href="publications-by-year.html">publications</a>
+<span class="sep" aria-hidden="true">|</span>
+<a href="talks.html">talks</a>
+<span class="sep" aria-hidden="true">|</span>
+<a href="ai-in-maths.html" aria-current="page">AI in maths</a>
+</nav>
+}}
+
+= *Viet-Hoang Tran | AI in maths*
+
+== [https://arxiv.org/abs/2609.01887 *Bouvier's Conjecture Is True*]
+
+*Abstract.* We construct a local UFD $A$ with $\dim A = 2$ and $\dim A[X] = 4$. Since every UFD is a Krull domain, $A$ is a finite-dimensional non-Jaffard Krull domain, proving Bouvier's conjecture.
+
+
+== [https://arxiv.org/abs/2608.28551 *The Erdős-Hajnal Property for the six-vertex Graph with Edge Set $\{ab,bc,cd,de,af,bf,df\}$*]
+
+*Abstract.* We prove that the six-vertex graph with edge set $\{ab,bc,cd,de,af,bf,df\}$ has the Erdős-Hajnal property. The proof adapts the iterative-sparsification method of Nguyen, Scott, and Seymour within the comb-based framework of Huang, Ju, and Zhou.
+
+
+== [https://arxiv.org/abs/2608.26044 *Polynomial extensions do not preserve the strong finite type property*]
+
+*Abstract.* Arnold introduced the strong finite type (SFT) property in 1973 while studying the dimension of power series rings. For several classes of rings, polynomial extension is known to preserve the SFT property, but the general question remained open. We answer it negatively by constructing an SFT ring $R$ such that $R[X]$ is not SFT.
+
+
+== [https://arxiv.org/abs/2608.12642 *The Noetherian Case of Bayart's Power-Series Question*]
+
+*Abstract.* Let $R$ be a commutative Noetherian ring. We prove that if the one-variable formal power-series ring $R[[x]]$ is a unique factorization domain, then so is the two-variable formal power-series ring $R[[x,y]]$. This resolves a question raised by Bayart in 1973 for Noetherian coefficient rings. The proof uses the divisor theory of Noetherian normal domains, expressed through finite rank-one reflexive modules.
+
+
+== {{<a href="preprints/problem-12-OPICRT.pdf" download>}}*Alternating Divisoriality of Prime Ideals Along Infinite Chains of Bézout Domains*{{</a>}}
+
+*Abstract.* A question posed in the literature asks whether the divisoriality of a prime can alternate indefinitely along an ascending chain of overrings of a Prüfer domain or a descending chain of same-quotient-field underrings, and what happens at the limit. We construct such chains with all finite-stage domains Bézout and show, in both directions, that the limit prime can be either divisorial or nondivisorial.
+
+
+== {{<a href="preprints/problem-14-OPICRT.pdf" download>}}*On the Krull Dimensions of Rings of Integer-Valued Polynomials and Polynomial Rings*{{</a>}}
+
+*Abstract.* It was conjectured that every integral domain $D$ satisfies $\dim \operatorname{Int}(D) \leq \dim D[X]$. We disprove this conjecture and, more strongly, classify all pairs for which both dimensions are finite. Writing $m = \dim D[X]$ and $n = \dim \operatorname{Int}(D)$, the pairs that occur are precisely $\{(1,1),(2,2)\} \cup \{(m,n) \in \mathbb{Z}_{>0}^{2} : m \geq 3,\ n \geq m-1\}$.
+
+
+== {{<a href="preprints/problem-22-OPICRT.pdf" download>}}*Weak Polynomial Completeness Does Not Imply Almost Polynomial Completeness*{{</a>}}
+
+*Abstract.* We show that weak polynomial completeness does not imply almost polynomial completeness by constructing an explicit extension of domains $D \subseteq A$ such that $\operatorname{Int}(D) \subseteq \operatorname{Int}(A)$ but $\operatorname{Int}(D^2) \nsubseteq \operatorname{Int}(A^2)$.
+
+
+== {{<a href="preprints/problem-10-OPICRT.pdf" download>}}*A Reduced Non-McCoy Ring with the Annihilator Condition and $(A_2)$*{{</a>}}
+
+*Abstract.* It has been asked whether a reduced non-McCoy ring can satisfy both the annihilator condition and $(A_n)$ for some $n \geq 2$. In this work, we prove that such rings exist exactly when $n = 2$, by constructing a countable example and showing that the annihilator condition together with $(A_3)$ forces a ring to be McCoy.
+
+
+== {{<a href="preprints/problem-31-OPICRT.pdf" download>}}*Star Operations and Kronecker Function Rings on Projective Models*{{</a>}}
+
+*Abstract.* Following Fabbri and Heubo-Kwegna's work on projective space, Olberding asked for an extension to arbitrary projective varieties. The question seeks an ideal-theoretic interpretation of valuative Kronecker function rings beyond purely transcendental function fields. We address it by constructing projective Kronecker function rings associated to compatible local star and semistar operations on proper integral models. For the valuative $b$-operations, these rings recover the known Bézout domain attached to the function field extension, independently of the model.
+
+
+== {{<a href="preprints/problem-44-OPICRT.pdf" download>}}*A Construction of a Two-Dimensional Complete Noetherian Normal Local Domain with No One-Fibered $m$-Primary Ideals*{{</a>}}
+
+*Abstract.* Cutkosky proved the existence of a two-dimensional complete Noetherian normal local domain $(R,\mathfrak{m})$ in which every $\mathfrak{m}$-primary ideal has at least two Rees valuations, but his argument did not specify the resulting completed local ring by concrete algebraic data. Subsequent work continued to report that no explicit example was known. We give an explicit algebro-geometric construction of such a domain and prove that it has the required property.
+
+
+== {{<a href="preprints/problem-40-OPICRT.pdf" download>}}*Order Types of Prime Spectra of Affine Planes*{{</a>}}
+
+*Abstract.* We give negative answers to parts (b), (c), and (d) of Problem 40 in Cahen-Fontana-Frisch-Glaz's /Open Problems in Commutative Ring Theory/. We also establish first-order and infinitary axiomatization results for $\operatorname{Spec}\mathbb{Q}[x,y]$ relevant to part (a), without providing an intrinsic structural characterization.
+
+
+== {{<a href="preprints/problem-32-OPICRT.pdf" download>}}*Two-$v$-Generation Without Stability in Dimension One*{{</a>}}
+
+*Abstract.* A three-part problem contributed by Gabelli to the 2014 collection /Open Problems in Commutative Ring Theory/ asks how stability, the Mori property, and two-$v$-generation interact. The stable Archimedean question is known to have a negative answer. We settle the two remaining questions: over every field there is a one-dimensional Noetherian local domain in which every nonzero fractional ideal is two-$v$-generated, but a divisorial maximal ideal is neither stable nor $v$-stable. Consequently, the corresponding stronger questions of Gabelli and Roitman also have negative answers.
