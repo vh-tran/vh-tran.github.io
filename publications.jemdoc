@@ -145,6 +145,9 @@ preprint, 2026
 preprint, 2024
 
 {{
+<!-- GoatCounter Analytics -->
+<script data-goatcounter="https://vh-tran.goatcounter.com/count" data-goatcounter-settings='{"path":"/publications.html"}' async src="https://gc.zgo.at/count.js"></script>
+<!-- End GoatCounter Analytics -->
 <script src="document-links.js"></script>
 <!-- Cloudflare Web Analytics -->
 <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"01a7743c261d40939ed4a0fd1af06b30"}'></script>
