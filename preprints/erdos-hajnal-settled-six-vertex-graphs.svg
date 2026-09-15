@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 185" role="img" aria-labelledby="title desc">
+  <title id="title">Settled prime graphs on six vertices</title>
+  <desc id="desc">Drawings of the graphs N, J, E, bird, and F. F is highlighted as the graph proved in this paper.</desc>
+  <style>
+    .edge { stroke: #554542; stroke-width: 2.7; stroke-linecap: round; }
+    .node { fill: #fff9f7; stroke: #554542; stroke-width: 2; }
+    .f-edge { stroke: #873f39; stroke-width: 3.2; stroke-linecap: round; }
+    .f-node { fill: #f8cfca; stroke: #873f39; stroke-width: 2.2; }
+    .name { fill: #302725; font: italic 21px Georgia, serif; text-anchor: middle; }
+    .new { fill: #873f39; font: 600 15px Georgia, serif; text-anchor: middle; }
+  </style>
+
+  <g transform="translate(12,0)" aria-label="N">
+    <line class="edge" x1="10" y1="105" x2="38" y2="105" /><line class="edge" x1="38" y1="105" x2="66" y2="105" />
+    <line class="edge" x1="38" y1="105" x2="94" y2="105" /><line class="edge" x1="94" y1="105" x2="122" y2="105" />
+    <line class="edge" x1="10" y1="105" x2="66" y2="40" /><line class="edge" x1="38" y1="105" x2="66" y2="40" /><line class="edge" x1="94" y1="105" x2="66" y2="40" />
+    <circle class="node" cx="10" cy="105" r="8" /><circle class="node" cx="38" cy="105" r="8" /><circle class="node" cx="66" cy="105" r="8" /><circle class="node" cx="94" cy="105" r="8" /><circle class="node" cx="122" cy="105" r="8" /><circle class="node" cx="66" cy="40" r="8" />
+    <text class="name" x="66" y="160">N</text>
+  </g>
+
+  <g transform="translate(188,0)" aria-label="J">
+    <line class="edge" x1="10" y1="105" x2="38" y2="105" /><line class="edge" x1="38" y1="105" x2="66" y2="105" /><line class="edge" x1="66" y1="105" x2="94" y2="105" /><line class="edge" x1="94" y1="105" x2="122" y2="105" />
+    <line class="edge" x1="10" y1="105" x2="66" y2="40" /><line class="edge" x1="38" y1="105" x2="66" y2="40" /><line class="edge" x1="66" y1="105" x2="66" y2="40" /><line class="edge" x1="94" y1="105" x2="66" y2="40" />
+    <circle class="node" cx="10" cy="105" r="8" /><circle class="node" cx="38" cy="105" r="8" /><circle class="node" cx="66" cy="105" r="8" /><circle class="node" cx="94" cy="105" r="8" /><circle class="node" cx="122" cy="105" r="8" /><circle class="node" cx="66" cy="40" r="8" />
+    <text class="name" x="66" y="160">J</text>
+  </g>
+
+  <g transform="translate(364,0)" aria-label="E">
+    <line class="edge" x1="10" y1="105" x2="38" y2="105" /><line class="edge" x1="38" y1="105" x2="66" y2="105" /><line class="edge" x1="66" y1="105" x2="94" y2="105" /><line class="edge" x1="94" y1="105" x2="122" y2="105" /><line class="edge" x1="66" y1="105" x2="66" y2="40" />
+    <circle class="node" cx="10" cy="105" r="8" /><circle class="node" cx="38" cy="105" r="8" /><circle class="node" cx="66" cy="105" r="8" /><circle class="node" cx="94" cy="105" r="8" /><circle class="node" cx="122" cy="105" r="8" /><circle class="node" cx="66" cy="40" r="8" />
+    <text class="name" x="66" y="160">E</text>
+  </g>
+
+  <g transform="translate(540,0)" aria-label="bird">
+    <line class="edge" x1="10" y1="105" x2="38" y2="105" /><line class="edge" x1="38" y1="105" x2="66" y2="105" /><line class="edge" x1="66" y1="105" x2="94" y2="105" /><line class="edge" x1="94" y1="105" x2="122" y2="105" />
+    <line class="edge" x1="38" y1="105" x2="66" y2="40" /><line class="edge" x1="66" y1="105" x2="66" y2="40" />
+    <circle class="node" cx="10" cy="105" r="8" /><circle class="node" cx="38" cy="105" r="8" /><circle class="node" cx="66" cy="105" r="8" /><circle class="node" cx="94" cy="105" r="8" /><circle class="node" cx="122" cy="105" r="8" /><circle class="node" cx="66" cy="40" r="8" />
+    <text class="name" x="66" y="160">bird</text>
+  </g>
+
+  <g transform="translate(716,0)" aria-label="F, proved in this paper">
+    <line class="f-edge" x1="10" y1="105" x2="38" y2="105" /><line class="f-edge" x1="38" y1="105" x2="66" y2="105" /><line class="f-edge" x1="66" y1="105" x2="94" y2="105" /><line class="f-edge" x1="94" y1="105" x2="122" y2="105" />
+    <line class="f-edge" x1="10" y1="105" x2="66" y2="40" /><line class="f-edge" x1="38" y1="105" x2="66" y2="40" /><line class="f-edge" x1="94" y1="105" x2="66" y2="40" />
+    <circle class="f-node" cx="10" cy="105" r="8" /><circle class="f-node" cx="38" cy="105" r="8" /><circle class="f-node" cx="66" cy="105" r="8" /><circle class="f-node" cx="94" cy="105" r="8" /><circle class="f-node" cx="122" cy="105" r="8" /><circle class="f-node" cx="66" cy="40" r="8" />
+    <text class="name" x="66" y="154">F</text><text class="new" x="66" y="174">this paper</text>
+  </g>
+</svg>

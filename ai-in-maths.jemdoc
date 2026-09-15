@@ -10,6 +10,192 @@
 <span class="sep" aria-hidden="true">|</span>
 <a href="ai-in-maths.html" aria-current="page">AI in maths</a>
 </nav>
+<link rel="stylesheet" href="jemdoc.css?v=20260915-expand-all" type="text/css">
+<script id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 }}
 
 = *Viet-Hoang Tran | AI in maths*
+
+{{
+<div class="ai-maths-intro" style="margin-bottom:1.6em;">
+<h2>Background</h2>
+<p>I have a decent background in maths, mostly in algebraic geometry and number theory.</p>
+<p>I stopped maths after my first Ph.D. year to pursue machine learning. After a few years, while ML/AI is still an active area, its academic side feels contaminated with AI right now: tons of submissions, tons of acceptances, and peer review is kinda broken. I want to step away from it for a while. I’ll still follow new work, but I’m stopping working on it myself. Waiting for some changes.</p>
+<p>My focus is shifting to AI in maths, which also happens to be the current hype and trend. Not because it’s trendy, but because I think my background is a good fit.</p>
+<h2>Motivation</h2>
+<p>I started exploring AI-assisted maths after the announcement of a counterexample to the Jacobian conjecture. I had been skeptical of OpenAI’s Erdős unit-distance announcement, but this time AI was making progress on something I was actually familiar with. I first learned about the Jacobian conjecture, probably from Hartshorne’s AG, and that pushed me to try AI in maths myself.</p>
+<p>At first, I was a bit clumsy with AI. While I do use AI for other tasks, using it for maths feels weird. Sometimes it was good; sometimes it was bad. Slowly, though, I kinda got a feel and an intuition for it. Reading its CoT alongside my own reasoning helped me ask better questions. Gradually, I became impressed by how well it could develop arguments with a human in the loop.</p>
+<p>⟶ <i>LLMs are good at connecting the dots, and they know almost all the existing dots.</i></p>
+<p>I think most mathematicians agree that maths isn’t just about solving problems. The deeper goal is understanding. Open problems and conjectures are milestones; their value lies in the theory and techniques developed along the way. My rough intuition is that, when looking at a problem, humans tend to find a new dimension, a bird’s-eye view that helps us see and understand it, while AI explores a vast “linear span” of existing techniques.</p>
+<p>⟶ <i>This isn’t a firm boundary: sometimes, unexpected combinations can be considered creative.</i></p>
+</div>
+<h2>Results</h2>
+<p>For each result, we give a short summary of the literature and the status of the problem, followed by what we prove. Sometimes we also share a working log from the process, with further related results and open questions. However, these logs are meant as material for AI models to explore further, not for humans to read.</p>
+<hr style="width:25%;margin:0.9em 0 0.7em;border:0;border-top:1px solid rgb(157,129,122);">
+<p class="paper-details-controls"><button type="button" id="toggle-all-details" class="paper-details-toggle" aria-expanded="false">&gt;&nbsp;&nbsp;<span>expand all</span></button></p>
+<ul class="paper-entry-list"><li>
+<p style="margin-bottom:0.15em;"><a href="https://arxiv.org/abs/2609.01887"><b>Bouvier's conjecture and dimension sequences of UFDs</b></a><br>
+<a href="https://arxiv.org/abs/2609.01887">arXiv</a>, 2026</p>
+<details class="paper-details"><summary><span style="font-size:80%;font-weight:600;color:black;">&gt;&nbsp;&nbsp;details</span></summary>
+<div class="paper-details-body"><p><a href="https://msp.org/pjm/1954/4-4/pjm-v4-n4-p09-p.pdf">Seidenberg's 1954 inequalities</a> give
+$\dim R+1\leq\dim R[X]\leq2\dim R+1$
+for every finite-dimensional domain $R$, and every value in this interval can occur.</p>
+<p>A finite-dimensional domain $R$ is Jaffard if $\dim R[X_1,\ldots,X_r]=\dim R+r$ for every $r\geq1$; otherwise it is non-Jaffard. <a href="https://doi.org/10.1090/S0002-9939-04-07502-1">Announced by Bouvier in 1985</a> and <a href="https://www.sciencedirect.com/science/article/pii/0022404988900278">published in a stronger factorial form by Bouvier and Kabbaj in 1988</a>, the conjecture asks whether some finite-dimensional Krull domain is non-Jaffard. Its equivalent one-variable form became Problem 37 in the <a href="https://doi.org/10.1007/978-1-4939-0925-4%5F20">2014 collection <i>Open Problems in Commutative Ring Theory</i></a> by Cahen, Fontana, Frisch, and Glaz. It asks whether a finite-dimensional Krull domain $R$ can satisfy $\dim R[X]\gt\dim R+1$, and more particularly whether $R$ can be chosen to be a UFD.</p>
+<hr style="width:25%;margin:0.9em 0 0.7em;border:0;border-top:1px solid rgb(157,129,122);">
+<p>We construct a UFD $R$ with $\dim R=2$ and $\dim R[X]=4$, and therefore <i>prove Bouvier's conjecture</i>.</p>
+<hr style="width:25%;margin:0.9em 0 0.7em;border:0;border-top:1px solid rgb(157,129,122);">
+<p><b>(update)</b> We characterize the complete range of $\dim R[X]$, with UFD examples:</p>
+<p><i>Let $m,n$ be positive integers. There exists a UFD $R$ such that $\dim R=n$ and $\dim R[X]=m$ if and only if $n+1\leq m\leq2n$.</i></p>
+<p>Thus the Krull condition excludes Seidenberg's upper endpoint $2n+1$.</p>
+<hr style="width:25%;margin:0.9em 0 0.7em;border:0;border-top:1px solid rgb(157,129,122);">
+<p><b>(update)</b> We characterize all dimension sequences of UFDs:</p>
+<p><i>Let $(a_n)_{n\geq0}$ be an integer sequence with $a_0=d\geq0$. There exists a UFD $R$ such that</i></p>
+<p style="text-align:center;margin:0.45em 0;"><i>$\dim R[X_1,\ldots,X_n]=a_n\quad\text{for every }n\geq0$</i></p>
+<p><i>if and only if</i></p>
+<p style="text-align:center;margin:0.45em 0;"><i>$\displaystyle a_n+1\leq a_{n+1}\leq a_n+\left\lfloor\frac{a_n+1}{n+1}\right\rfloor\quad(n\geq0)$,</i></p>
+<p><i>and $a_1\leq2d$ whenever $d\geq1$.</i></p></div></details>
+</li></ul>
+<ul class="paper-entry-list"><li>
+<p style="margin-bottom:0.15em;"><a href="preprints/A%5Fone-dimensional%5Fcoherent%5Fdomain%5Fwith%5Fnon-Prüfer%5Fintegral%5Fclosure.pdf"><b>A one-dimensional coherent domain with non-Prüfer integral closure</b></a><br>
+<a href="preprints/A%5Fone-dimensional%5Fcoherent%5Fdomain%5Fwith%5Fnon-Prüfer%5Fintegral%5Fclosure.pdf">PDF</a>, 2026</p>
+<details class="paper-details"><summary><span style="font-size:80%;font-weight:600;color:black;">&gt;&nbsp;&nbsp;details</span></summary>
+<div class="paper-details-body">
+<p>A domain $R$ is coherent if every finitely generated ideal is finitely presented, and Prüfer if every nonzero finitely generated ideal is invertible. Write $R'$ for its integral closure in its fraction field.</p>
+<p>The Krull–Akizuki theorem, as stated in the <a href="https://stacks.math.columbia.edu/tag/09IG">Stacks Project (2026)</a>, says that a one-dimensional Noetherian domain has Dedekind, hence Prüfer, integral closure. <a href="https://doi.org/10.4153/CMB-1979-041-3">Papick (1979)</a> showed that a one-dimensional coherent normal domain is Prüfer.</p>
+<p>This led to the question: must every one-dimensional coherent domain have Prüfer integral closure?</p>
+<p>The local form appeared in <a href="https://msp.org/pjm/1978/78-1/pjm-v78-n1-p15-s.pdf">Papick (1978)</a>, then as Conjecture $C_3$ in <a href="https://doi.org/10.1080/00927878408822998">Glaz–Vasconcelos (1984)</a>, Problem 65 in <a href="https://doi.org/10.1007/978-1-4757-3180-4%5F21">Chapman–Glaz (2000)</a>, and Problem 3 in the <a href="https://doi.org/10.1007/978-1-4939-0925-4%5F20">2014 collection <i>Open Problems in Commutative Ring Theory</i></a>. It was still open in <a href="https://arxiv.org/abs/2502.21020v3">Geroldinger–Kim–Loper's February 2026 survey</a>.</p>
+<hr style="width:25%;margin:0.9em 0 0.7em;border:0;border-top:1px solid rgb(157,129,122);">
+<p style="margin-bottom:0.2em;">Here is a list of additional hypotheses that give positive answers:</p>
+<details class="hypothesis-list"><summary><span style="font-size:80%;font-weight:600;color:black;">&gt;&nbsp;&nbsp;list</span></summary>
+<ul style="margin-top:0.2em;margin-bottom:0.7em;">
+<li>$R$ is Noetherian, Mori, or an $H$-domain [<a href="https://stacks.math.columbia.edu/tag/09IG">Stacks Project, 2026</a>; <a href="https://doi.org/10.1080/00927878408822998">Glaz–Vasconcelos, 1984</a>];</li>
+<li>$R$ is integrally closed, regular, has finite weak or global dimension, is a Prüfer $v$-multiplication domain, or is a $v$-domain [<a href="https://doi.org/10.4153/CMB-1979-041-3">Papick, 1979</a>; <a href="https://doi.org/10.24330/ieja.504108">Tamekkante–Assaad–Bouba, 2019</a>];</li>
+<li>$R'$ is module-finite over $R$, or $R'$ is locally finite-conductor [<a href="https://doi.org/10.1080/00927870801941895">Picozza–Tartarone, 2008</a>];</li>
+<li>each nonnormal $R_{\mathfrak p}$ has a proper very finite overring [<a href="https://msp.org/pjm/1978/78-1/pjm-v78-n1-p15-s.pdf">Papick, 1978</a>];</li>
+<li>$R$ is local and has a proper very finite domain extension or a proper integral coherent pair [<a href="https://doi.org/10.1017/S0013091500006441">Huckaba–Papick, 1981</a>; <a href="https://doi.org/10.14992/00010253">Papick, 1979</a>];</li>
+<li>every proper overring, or every local overring, is coherent [<a href="https://doi.org/10.4153/CMB-1979-041-3">Papick, 1979</a>];</li>
+<li>$R$ is locally a pseudo-valuation domain [<a href="https://doi.org/10.4153/CMB-1978-027-9">Dobbs, 1978</a>];</li>
+<li>$R$ has a canonical module and finitely generated uppers to zero [<a href="https://doi.org/10.1080/00927878408822998">Glaz–Vasconcelos, 1984</a>];</li>
+<li>$R$ is finitely stable, stable, or quasi-stable [<a href="https://doi.org/10.1016/j.jalgebra.2010.07.021">Picozza–Tartarone, 2010</a>];</li>
+<li>$R$ is Clifford regular [<a href="https://doi.org/10.1016/j.jpaa.2010.07.011">Bazzoni, 2011</a>];</li>
+<li>$R$ is totally divisorial or Warfield [<a href="https://www.numdam.org/article/RSMUP%5F2001%5F%5F106%5F%5F261%5F0.pdf">Olberding, 2001</a>];</li>
+<li>$R$ has finite expansion over a field [<a href="https://doi.org/10.1007/s13366-025-00810-0">Steiner, 2026</a>].</li>
+</ul>
+</details>
+<hr style="width:25%;margin:0.9em 0 0.7em;border:0;border-top:1px solid rgb(157,129,122);">
+<p>We answer the original question negatively:</p>
+<p><i>There exists a one-dimensional coherent local domain whose integral closure is not Prüfer.</i></p>
+<p>We also prove that our counterexample satisfies <i>none</i> of these additional hypotheses as listed.</p>
+</div></details>
+</li></ul>
+<ul class="paper-entry-list"><li>
+<p style="margin-bottom:0.15em;"><a href="preprints/on-the-krull-dimensions-of-rings-of-integer-valued-polynomials-and-polynomial-rings.pdf" download><b>On the Krull dimensions of rings of integer-valued polynomials and polynomial rings</b></a><br>
+<a href="preprints/on-the-krull-dimensions-of-rings-of-integer-valued-polynomials-and-polynomial-rings.pdf" download>PDF</a>, 2026</p>
+<details class="paper-details"><summary><span style="font-size:80%;font-weight:600;color:black;">&gt;&nbsp;&nbsp;details</span></summary>
+<div class="paper-details-body"><p>For a domain $R$ with quotient field $K$, $\operatorname{Int}(R)=\{f\in K[X]:f(R)\subseteq R\}$. Although $R[X]\subseteq\operatorname{Int}(R)$, Krull dimension is not monotone under ring extensions, so the two dimensions are not automatically ordered.</p>
+<p><a href="https://doi.org/10.1007/BF02568436">Cahen (1990)</a> proved the universal lower bound $\dim R[X]-1\leq\dim\operatorname{Int}(R)$ and gave examples attaining it. <a href="https://arxiv.org/abs/math/0309360">Fontana and Kabbaj (2004)</a> formulated the reverse bound $\dim\operatorname{Int}(R)\leq\dim R[X]$ as a conjecture; <a href="https://www.numdam.org/articles/10.5802/acirm.27/">Chabert (2010)</a> later recorded it as a question, and it became Problem 14 in the <a href="https://doi.org/10.1007/978-1-4939-0925-4%5F20">2014 collection <i>Open Problems in Commutative Ring Theory</i></a> by Cahen, Fontana, Frisch, and Glaz.</p>
+<p>Positive answers were known for <a href="https://faculty.kfupm.edu.sa/MATH/kabbaj/RESEARCH/FIKT-ExpoMath-1997.pdf">finite-dimensional Jaffard domains (1997)</a>, <a href="https://faculty.kfupm.edu.sa/math/kabbaj/RESEARCH/FIKT-Dekker205-1999.pdf">domains of Krull type (1999)</a>, <a href="https://arxiv.org/abs/math/0309360">locally essential domains (2004)</a>, and <a href="https://gjom.org/index.php/gjom/article/download/262/255/">the flat case (2016)</a>; <a href="https://arxiv.org/abs/2510.03443">more recent work (2026)</a> added further Jaffard-like and intermediate-ring cases.</p>
+<p>The general problem was still open: for an arbitrary domain $R$, must $\dim R[X]-1\leq\dim\operatorname{Int}(R)\leq\dim R[X]$ hold?</p>
+<hr style="width:25%;margin:0.9em 0 0.7em;border:0;border-top:1px solid rgb(157,129,122);">
+<p>We answer this question negatively and, moreover, classify every finite pair that can occur as $(\dim R[X],\dim\operatorname{Int}(R))$:</p>
+<p><i>For positive integers $m,n$, there exists a domain $R$ with $\dim R[X]=m$ and $\dim\operatorname{Int}(R)=n$ if and only if $(m,n)=(1,1)$, $(m,n)=(2,2)$, or $m\geq3$ and $n\geq m-1$.</i></p>
+</div></details>
+</li></ul>
+<ul class="paper-entry-list"><li>
+<p style="margin-bottom:0.15em;"><a href="https://arxiv.org/abs/2608.26044"><b>Polynomial extensions do not preserve the strong finite type property</b></a><br>
+<a href="https://arxiv.org/abs/2608.26044">arXiv</a>, 2026</p>
+<details class="paper-details"><summary><span style="font-size:80%;font-weight:600;color:black;">&gt;&nbsp;&nbsp;details</span></summary>
+<div class="paper-details-body"><p><a href="https://doi.org/10.1090/S0002-9947-1973-0316451-8">Arnold introduced strong finite type (SFT) rings in 1973</a> while studying Krull dimension in formal power-series rings. An ideal $I$ is SFT if it contains a finitely generated ideal $B$ and there is an $N\geq 1$ such that $a^N\in B$ for every $a\in I$; a ring is SFT if all its ideals are.</p>
+<p>For polynomial extensions, <a href="https://doi.org/10.1016/j.jpaa.2018.12.015">Park (2019)</a> proved preservation for zero-dimensional SFT rings, SFT Prüfer domains, and SFT domains whose prime quotients are integrally closed. <a href="https://arxiv.org/abs/2301.01663">Coykendall–Dutta (2024)</a> proved that every extended SFT ideal $IR[X]$ is SFT, but still listed whether $R[X]$ must be SFT whenever $R$ is SFT as open.</p>
+<hr style="width:25%;margin:0.9em 0 0.7em;border:0;border-top:1px solid rgb(157,129,122);">
+<p>We answer the question negatively by constructing a counterexample:</p>
+<p><i>There exists a SFT ring $R$ such that $R[X]$ is not SFT.</i></p>
+<hr style="width:25%;margin:0.9em 0 0.7em;border:0;border-top:1px solid rgb(157,129,122);">
+<p>We include a working log that determines properties of the constructed counterexamples and their polynomial and formal power-series extensions, including their SFT, VSFT, and $t$-SFT status, Krull dimensions, prime-chain cardinalities, and more. <a href="preprints/Polynomial%5Fextensions%5Fdo%5Fnot%5Fpreserve%5Fthe%5Fstrong%5Ffinite%5Ftype%5Fproperty%5Fworking%5Flog.pdf" download>working log</a></p></div></details>
+</li></ul>
+<ul class="paper-entry-list"><li>
+<p style="margin-bottom:0.15em;"><a href="https://arxiv.org/abs/2608.12642"><b>The Noetherian case of Bayart's power-series question</b></a><br>
+<a href="https://arxiv.org/abs/2608.12642">arXiv</a>, 2026</p>
+<details class="paper-details"><summary><span style="font-size:80%;font-weight:600;color:black;">&gt;&nbsp;&nbsp;details</span></summary>
+<div class="paper-details-body"><p><a href="https://gallica.bnf.fr/ark:/12148/bpt6k6312609m/f107.item">Marc Bayart (1973)</a> asked whether $R[[x]]$ being a UFD forces $R[[x,y]]$ to be a UFD. It was recorded as still open in July 2026 [<a href="https://arxiv.org/abs/2607.03475">Jones–Paran, 2026</a>].</p>
+<hr style="width:25%;margin:0.9em 0 0.7em;border:0;border-top:1px solid rgb(157,129,122);">
+<p>We prove the Noetherian case of this problem:</p>
+<p><i>Let $R$ be a commutative Noetherian ring. If $R[[x]]$ is a UFD, then $R[[x,y]]$ is a UFD.</i></p>
+<p>The general case, without the Noetherian assumption, remains open.</p></div></details>
+</li></ul>
+<ul class="paper-entry-list"><li>
+<p style="margin-bottom:0.15em;"><a href="https://arxiv.org/abs/2609.05891"><b>Weak polynomial completeness does not imply almost polynomial completeness</b></a><br>
+<a href="https://arxiv.org/abs/2609.05891">arXiv</a>, 2026</p>
+<details class="paper-details"><summary><span style="font-size:80%;font-weight:600;color:black;">&gt;&nbsp;&nbsp;details</span></summary>
+<div class="paper-details-body"><p>For an extension of domains $D\subseteq A$, polynomial completeness (PC) means that $D$ is polynomially dense in $A$; almost polynomial completeness (APC) asks for $\operatorname{Int}(D^n)\subseteq\operatorname{Int}(A^n)$ for every $n\geq1$; weak polynomial completeness (WPC) asks only for $n=1$.</p>
+<p><a href="https://doi.org/10.1016/j.jalgebra.2007.06.025">Elliott (2007)</a> proved that PC implies APC by successively specializing one variable at a time; APC implies WPC simply by taking $n=1$.</p>
+<figure style="max-width:42em;margin:0.9em auto 1em;text-align:center;">
+<svg viewBox="0 0 720 245" role="img" aria-labelledby="pc-apc-wpc-title" style="display:block;width:100%;height:auto;">
+<title id="pc-apc-wpc-title">PC implies APC, which implies WPC. The converse of each implication fails.</title>
+<g fill="none" stroke="rgb(52,44,42)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M 142 106 Q 235 28 328 106"/><polyline points="316,103 328,106 323,94"/>
+<path d="M 392 106 Q 485 28 578 106"/><polyline points="566,103 578,106 573,94"/>
+<path d="M 328 134 Q 235 212 142 134"/><polyline points="154,137 142,134 147,146"/>
+<path d="M 578 134 Q 485 212 392 134"/><polyline points="404,137 392,134 397,146"/>
+</g>
+<g fill="rgb(251,240,238)" stroke="rgb(52,44,42)" stroke-width="2"><circle cx="110" cy="120" r="34"/><circle cx="360" cy="120" r="34"/><circle cx="610" cy="120" r="34"/></g>
+<g fill="rgb(38,31,30)" font-family="Source Serif 4, Georgia, serif" text-anchor="middle"><text x="110" y="127" font-size="21" font-weight="600">PC</text><text x="360" y="127" font-size="21" font-weight="600">APC</text><text x="610" y="127" font-size="21" font-weight="600">WPC</text><text x="235" y="42" font-size="17">implies</text><text x="485" y="42" font-size="17">implies</text></g>
+<g fill="rgb(242,223,220)"><circle cx="235" cy="173" r="11"/><circle cx="485" cy="173" r="11"/></g>
+<g fill="rgb(123,52,46)" font-family="Arial, sans-serif" text-anchor="middle" font-size="24" font-weight="700"><text x="235" y="181">×</text><text x="485" y="181">×</text></g>
+<g fill="rgb(95,81,78)" font-family="Source Serif 4, Georgia, serif" text-anchor="middle" font-size="16"><text x="235" y="224">Elliott (2009)</text><text x="485" y="224" fill="rgb(123,52,46)" font-weight="700">this paper</text></g>
+</svg>
+</figure>
+<p><a href="https://doi.org/10.1515/9783110213188.223">Elliott (2009)</a> gave the APC-but-not-PC example $\mathbb Z[T]\subseteq\mathbb Z[T/2]$.</p>
+<p>The remaining question, whether WPC implies APC, was left open there; <a href="https://arxiv.org/abs/1109.3921">Elliott (2013)</a> later wrote that he expected a negative answer, and it became Problem 22 in the <a href="https://doi.org/10.1007/978-1-4939-0925-4%5F20">2014 collection <i>Open Problems in Commutative Ring Theory</i></a> by Cahen, Fontana, Frisch, and Glaz.</p>
+<hr style="width:25%;margin:0.9em 0 0.7em;border:0;border-top:1px solid rgb(157,129,122);">
+<p>We give a negative answer to this question:</p>
+<p><i>There is an explicit extension of domains $D\subseteq A$ such that $\operatorname{Int}(D)\subseteq\operatorname{Int}(A)$, but $\operatorname{Int}(D^n)\nsubseteq\operatorname{Int}(A^n)$ for every $n\geq2$.</i></p>
+<p>So WPC does not imply APC.</p></div></details>
+</li></ul>
+<ul class="paper-entry-list"><li>
+<p style="margin-bottom:0.15em;"><b>Some progress on <a href="https://arxiv.org/abs/2605.25259">the collection Open Problems in Commutative Ring Theory</a> by Paul-Jean Cahen, Marco Fontana, Sophie Frisch, and Sarah Glaz</b></p>
+<details class="paper-details"><summary><span style="font-size:80%;font-weight:600;color:black;">&gt;&nbsp;&nbsp;details</span></summary>
+<div class="paper-details-body"><hr style="width:25%;margin:0.9em 0 0.7em;border:0;border-top:1px solid rgb(157,129,122);"><p>update soon</p></div></details>
+</li></ul>
+<ul class="paper-entry-list"><li>
+<p style="margin-bottom:0.15em;"><a href="https://arxiv.org/abs/2608.28551"><b>The Erdős-Hajnal property for the six-vertex graph with edge set $\{ab,bc,cd,de,af,bf,df\}$</b></a><br>
+<a href="https://arxiv.org/abs/2608.28551">arXiv</a>, 2026</p>
+<details class="paper-details"><summary><span style="font-size:80%;font-weight:600;color:black;">&gt;&nbsp;&nbsp;details</span></summary>
+<div class="paper-details-body"><p>For a fixed graph $H$, the Erdős–Hajnal conjecture asks whether every $H$-free graph on $n$ vertices contains a clique or stable set of size at least $n^{c(H)}$ for some $c(H)>0$. Since the property is preserved by complementation and vertex substitution, it is enough to settle prime graphs.</p>
+<p>For five vertices, the prime cases up to complementation were completed by <a href="https://www.sciencedirect.com/science/article/pii/S0095895608000294">Chudnovsky–Safra (2008)</a> for the bull, <a href="https://arxiv.org/abs/2102.04994">Chudnovsky–Scott–Seymour–Spirkl (2021)</a> for $C_5$, and <a href="https://arxiv.org/abs/2312.15333">Nguyen–Scott–Seymour (2023)</a> for $P_5$.</p>
+<figure style="margin:0.8em 0 1em;"><img src="preprints/erdos-hajnal-small-prime-graphs.svg" alt="The prime five-vertex graph cases: bull, C5, and P5" style="display:block;width:100%;height:auto;"><figcaption style="margin-top:0.25em;text-align:center;font-size:90%;color:rgb(95,81,78);">The prime five-vertex representatives, up to complementation.</figcaption></figure>
+<p>There are $26$ prime graphs on six vertices, forming $13$ complementary pairs. Before this paper, $N$ was settled by <a href="https://arxiv.org/abs/2307.06455">Nguyen–Scott–Seymour (2023)</a>; $J$ follows from their leaf/co-leaf and $P_5$ results together with the <a href="https://arxiv.org/abs/2403.08303">Bucić–Fox–Pham equivalence (2024)</a>; and $E$ and the bird were settled by <a href="https://arxiv.org/abs/2606.06258">Huang–Ju–Zhou (2026)</a>.</p>
+<figure style="margin:0.8em 0 1em;"><img src="preprints/erdos-hajnal-settled-six-vertex-graphs.svg" alt="The settled six-vertex prime graphs N, J, E, bird, and F" style="display:block;width:100%;height:auto;"><figcaption style="margin-top:0.25em;text-align:center;font-size:90%;color:rgb(95,81,78);">The 5 settled six-vertex representatives; their complements are settled as well.</figcaption></figure>
+<hr style="width:25%;margin:0.9em 0 0.7em;border:0;border-top:1px solid rgb(157,129,122);">
+<p>We prove one more six-vertex graph:</p>
+<p><i>The six-vertex graph $F$ with edge set $\{ab,bc,cd,de,af,bf,df\}$ has the Erdős–Hajnal property.</i></p>
+<p>The proof adapts the iterative-sparsification method of <a href="https://arxiv.org/abs/2307.06455">Nguyen–Scott–Seymour (2023)</a> within the comb-based framework of <a href="https://arxiv.org/abs/2606.06258">Huang–Ju–Zhou (2026)</a>, with a new $F$-specific analysis of comb interfaces.</p>
+<p>This brings the total to 5 of the 13 complementary pairs, or 10 of the 26 prime graphs. The other 8 pairs remain open. We also tried a few of them, but could not settle any.</p></div></details>
+</li></ul>
+<p style="margin-top:1.6em;"><b>Acknowledgements.</b> Thanks to <a href="https://kpup1710.github.io/">Dung V. Nguyen</a>, <a href="https://scholar.google.com/citations?user=gSki_FwAAAAJ&amp;hl=en">Khoi N. M. Nguyen</a>, <a href="https://www.linkedin.com/in/ngxquang/">Quang X. Nguyen</a>, <a href="https://scholar.google.com/citations?user=fG3mIYEAAAAJ&amp;hl=en">Huu-Tho Tran</a>, and <a href="https://scholar.google.com/citations?user=iRZlaI8AAAAJ&amp;hl=en">Hieu M. Vu</a> for their help with AI tools and hardware matters (alphabetical order).</p>
+<script>
+(function () {
+  var control = document.getElementById('toggle-all-details');
+  var panels = Array.prototype.slice.call(document.querySelectorAll('details.paper-details'));
+  if (!control || panels.length === 0) return;
+  var label = control.querySelector('span');
+  function syncControl() {
+    var allOpen = panels.every(function (panel) { return panel.open; });
+    control.setAttribute('aria-expanded', String(allOpen));
+    label.textContent = allOpen ? 'collapse all' : 'expand all';
+  }
+  control.addEventListener('click', function () {
+    var shouldOpen = !panels.every(function (panel) { return panel.open; });
+    panels.forEach(function (panel) {
+      panel.open = shouldOpen;
+      if (!shouldOpen) {
+        panel.querySelectorAll('details').forEach(function (nested) { nested.open = false; });
+      }
+    });
+    syncControl();
+  });
+  panels.forEach(function (panel) { panel.addEventListener('toggle', syncControl); });
+  syncControl();
+})();
+</script>
+}}

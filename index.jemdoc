@@ -59,10 +59,7 @@ email: hoang.tranviet \[at\] u.nus.edu {{<span style="margin-left:15px;"></span>
 
 == *News*
 
-- *Aug 2026*. Amid the Math-AI hype, with help from GPT-5.6 Sol, Claude Fable 5, and our agentic harness built around these models, we explored several open problems and obtained the following results. All three papers are preprints and have not yet been peer reviewed:
--- *The Noetherian case of Bayart's power-series question.* If {{<i>R</i>}} is a commutative Noetherian ring and {{<i>R</i>[[<i>x</i>]]}} is a UFD, then {{<i>R</i>[[<i>x</i>,<i>y</i>]]}} is also a UFD. Preprint available [https://arxiv.org/abs/2608.12642 here]. The question for arbitrary domains, without the Noetherian assumption, remains open.
--- *Polynomial extensions of SFT rings.* Must {{<i>R</i>[<i>x</i>]}} be SFT whenever {{<i>R</i>}} is a commutative SFT ring? Positive results were known under additional hypotheses; we answer the general question negatively by constructing a one-dimensional local SFT domain {{<i>R</i>}} for which {{<i>R</i>[<i>x</i>]}} is not SFT. Preprint available [https://arxiv.org/abs/2608.26044 here].
--- *A new six-vertex Erdős-Hajnal case.* Up to isomorphism, the 26 prime graphs on six vertices form 13 complementary pairs. Four pairs were previously known to have the Erdős-Hajnal property---two through published or accepted results and two through a preprint. We establish a fifth pair by proving the property for the graph with edge set \{ab,bc,cd,de,af,bf,df\}. Preprint available [https://arxiv.org/abs/2608.28551 here].
+- *Aug 2026*. Amid the Math-AI hype, with help from models available through ChatGPT and Claude Code and an agentic harness we built around them, I started exploring a few maths problems and got some decent results. The goal is to better understand what LLMs can and can't do in mathematical reasoning, rather than simply to get the problems solved. {{<span class="research-followup">I share my progress on this <a href="ai-in-maths.html">project page</a>.</span>}}
 
 - *May 2026*. 3 papers accepted at ICML 2026:
 -- [https://arxiv.org/abs/2606.17816 *Conservation Laws for Modern Neural Architectures*] *(spotlight)*

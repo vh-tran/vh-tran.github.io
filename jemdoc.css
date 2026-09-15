@@ -100,7 +100,8 @@ details > summary {
 details > summary::-webkit-details-marker {
 	display: none;
 }
-details > summary:hover {
+details > summary:hover,
+details[open] > summary {
 	background-color: rgba(26, 13, 171, 0.08);
 	padding: 1px 4px;
 	border-radius: 3px;
@@ -450,6 +451,46 @@ table.imgtable, table.imgtable td {
 
 summary { display: block; }
 
+.paper-details-body {
+	margin-top: 0.55em;
+	padding: 0.75em 1em;
+	background: #f2dfdc;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+.paper-details-body > :first-child {
+	margin-top: 0;
+}
+
+.paper-details-body > :last-child {
+	margin-bottom: 0;
+}
+
+.paper-details-controls {
+	margin: 0.35em 0 0.8em;
+}
+
+.paper-details-toggle {
+	border: 0;
+	background: transparent;
+	padding: 1px 0;
+	font: inherit;
+	font-size: 80%;
+	font-weight: 600;
+	color: #000;
+	cursor: pointer;
+}
+
+.paper-details-toggle:hover,
+.paper-details-toggle[aria-expanded="true"] {
+	background-color: rgba(26, 13, 171, 0.08);
+	padding: 1px 4px;
+	border-radius: 3px;
+	transition: background-color 0.15s ease;
+}
+
 /* #footer {
     display: none;
 }      */
@@ -508,6 +549,10 @@ summary { display: block; }
 
 .publication-view-option.is-active {
 	font-weight: bold;
+	background-color: rgba(26, 13, 171, 0.08);
+	padding: 1px 4px;
+	border-radius: 3px;
+	transition: background-color 0.15s ease;
 }
 
 .publication-view-marker {

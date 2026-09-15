@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 215" role="img" aria-labelledby="title desc">
+  <title id="title">Prime graphs on five vertices</title>
+  <desc id="desc">Drawings of the bull, the five-cycle, and the five-vertex path.</desc>
+  <style>
+    .edge { stroke: #554542; stroke-width: 3; stroke-linecap: round; }
+    .node { fill: #fff9f7; stroke: #554542; stroke-width: 2.2; }
+    .section { fill: #6d4d48; font: 600 21px Georgia, serif; text-anchor: middle; }
+    .name { fill: #302725; font: italic 23px Georgia, serif; text-anchor: middle; }
+  </style>
+
+  <text class="section" x="450" y="24">5 vertices</text>
+
+  <g aria-label="bull graph">
+    <line class="edge" x1="155" y1="82" x2="200" y2="140" />
+    <line class="edge" x1="200" y1="140" x2="245" y2="82" />
+    <line class="edge" x1="245" y1="82" x2="155" y2="82" />
+    <line class="edge" x1="155" y1="82" x2="120" y2="45" />
+    <line class="edge" x1="245" y1="82" x2="280" y2="45" />
+    <circle class="node" cx="155" cy="82" r="9" />
+    <circle class="node" cx="200" cy="140" r="9" />
+    <circle class="node" cx="245" cy="82" r="9" />
+    <circle class="node" cx="120" cy="45" r="9" />
+    <circle class="node" cx="280" cy="45" r="9" />
+    <text class="name" x="200" y="198">bull</text>
+  </g>
+
+  <g aria-label="C5">
+    <line class="edge" x1="450" y1="45" x2="503" y2="84" />
+    <line class="edge" x1="503" y1="84" x2="483" y2="146" />
+    <line class="edge" x1="483" y1="146" x2="417" y2="146" />
+    <line class="edge" x1="417" y1="146" x2="397" y2="84" />
+    <line class="edge" x1="397" y1="84" x2="450" y2="45" />
+    <circle class="node" cx="450" cy="45" r="9" />
+    <circle class="node" cx="503" cy="84" r="9" />
+    <circle class="node" cx="483" cy="146" r="9" />
+    <circle class="node" cx="417" cy="146" r="9" />
+    <circle class="node" cx="397" cy="84" r="9" />
+    <text class="name" x="450" y="198">C₅</text>
+  </g>
+
+  <g aria-label="P5">
+    <line class="edge" x1="620" y1="105" x2="675" y2="105" />
+    <line class="edge" x1="675" y1="105" x2="730" y2="105" />
+    <line class="edge" x1="730" y1="105" x2="785" y2="105" />
+    <line class="edge" x1="785" y1="105" x2="840" y2="105" />
+    <circle class="node" cx="620" cy="105" r="9" />
+    <circle class="node" cx="675" cy="105" r="9" />
+    <circle class="node" cx="730" cy="105" r="9" />
+    <circle class="node" cx="785" cy="105" r="9" />
+    <circle class="node" cx="840" cy="105" r="9" />
+    <text class="name" x="730" y="180">P₅</text>
+  </g>
+</svg>
