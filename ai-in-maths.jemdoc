@@ -97,7 +97,7 @@ for every finite-dimensional domain $R$, and every value in this interval can oc
 <p>Positive answers were known for <a href="https://faculty.kfupm.edu.sa/MATH/kabbaj/RESEARCH/FIKT-ExpoMath-1997.pdf">finite-dimensional Jaffard domains (1997)</a>, <a href="https://faculty.kfupm.edu.sa/math/kabbaj/RESEARCH/FIKT-Dekker205-1999.pdf">domains of Krull type (1999)</a>, <a href="https://arxiv.org/abs/math/0309360">locally essential domains (2004)</a>, and <a href="https://gjom.org/index.php/gjom/article/download/262/255/">the flat case (2016)</a>; <a href="https://arxiv.org/abs/2510.03443">more recent work (2026)</a> added further Jaffard-like and intermediate-ring cases.</p>
 <p>The general problem was still open: for an arbitrary domain $R$, must $\dim R[X]-1\leq\dim\operatorname{Int}(R)\leq\dim R[X]$ hold?</p>
 <hr style="width:25%;margin:0.9em 0 0.7em;border:0;border-top:1px solid rgb(157,129,122);">
-<p>We answer this question negatively and, moreover, classify every finite pair that can occur as $(\dim R[X],\dim\operatorname{Int}(R))$:</p>
+<p>We answer this question negatively and also classify all finite pairs that can occur as the dimensions of $R[X]$ and $\operatorname{Int}(R)$:</p>
 <p><i>For positive integers $m,n$, there exists a domain $R$ with $\dim R[X]=m$ and $\dim\operatorname{Int}(R)=n$ if and only if $(m,n)=(1,1)$, $(m,n)=(2,2)$, or $m\geq3$ and $n\geq m-1$.</i></p>
 </div></details>
 </li></ul>
@@ -172,7 +172,7 @@ for every finite-dimensional domain $R$, and every value in this interval can oc
 <p>The proof adapts the iterative-sparsification method of <a href="https://arxiv.org/abs/2307.06455">Nguyen–Scott–Seymour (2023)</a> within the comb-based framework of <a href="https://arxiv.org/abs/2606.06258">Huang–Ju–Zhou (2026)</a>, with a new $F$-specific analysis of comb interfaces.</p>
 <p>This brings the total to 5 of the 13 complementary pairs, or 10 of the 26 prime graphs. The other 8 pairs remain open. We also tried a few of them, but could not settle any.</p></div></details>
 </li></ul>
-<p style="margin-top:1.6em;"><b>Acknowledgements.</b> Thanks to <a href="https://kpup1710.github.io/">Dung V. Nguyen</a>, <a href="https://scholar.google.com/citations?user=gSki_FwAAAAJ&amp;hl=en">Khoi N. M. Nguyen</a>, <a href="https://www.linkedin.com/in/ngxquang/">Quang X. Nguyen</a>, <a href="https://scholar.google.com/citations?user=fG3mIYEAAAAJ&amp;hl=en">Huu-Tho Tran</a>, and <a href="https://scholar.google.com/citations?user=iRZlaI8AAAAJ&amp;hl=en">Hieu M. Vu</a> for their help with AI tools and hardware matters (alphabetical order).</p>
+<p style="margin-top:1.6em;"><b>Acknowledgements.</b> Thanks to <a href="https://scholar.google.com/citations?user=CM2qJSoAAAAJ&amp;hl=en">Thieu N. Vo</a> for discussions. Thanks to my Ph.D. advisor, <a href="https://tanmnguyen89.github.io/">Tan M. Nguyen</a>, for his support and for sponsoring some AI subscriptions. Thanks to <a href="https://kpup1710.github.io/">Dung V. Nguyen</a>, <a href="https://scholar.google.com/citations?user=gSki_FwAAAAJ&amp;hl=en">Khoi N. M. Nguyen</a>, <a href="https://www.linkedin.com/in/ngxquang/">Quang X. Nguyen</a>, <a href="https://scholar.google.com/citations?user=fG3mIYEAAAAJ&amp;hl=en">Huu-Tho Tran</a>, and <a href="https://scholar.google.com/citations?user=iRZlaI8AAAAJ&amp;hl=en">Hieu M. Vu</a> for their help with AI tools and hardware matters (alphabetical order).</p>
 <script>
 (function () {
   var control = document.getElementById('toggle-all-details');
