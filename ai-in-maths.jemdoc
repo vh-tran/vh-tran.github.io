@@ -31,6 +31,7 @@
 </div>
 <h2>Results</h2>
 <p>For each result, we give a short summary of the literature and the status of the problem, followed by what we prove. Sometimes we also share a working log from the process, with further related results and open questions. However, these logs are meant as material for AI models to explore further, not for humans to read.</p>
+<p>We use both GPT-6 Astra (previously 5.6 Sol) and Fable 5 to assist with this work.</p>
 <hr style="width:25%;margin:0.9em 0 0.7em;border:0;border-top:1px solid rgb(157,129,122);">
 <p class="paper-details-controls"><button type="button" id="toggle-all-details" class="paper-details-toggle" aria-expanded="false">&gt;&nbsp;&nbsp;<span>expand all</span></button></p>
 <ul class="paper-entry-list"><li>
@@ -99,6 +100,20 @@ for every finite-dimensional domain $R$, and every value in this interval can oc
 <hr style="width:25%;margin:0.9em 0 0.7em;border:0;border-top:1px solid rgb(157,129,122);">
 <p>We answer this question negatively and also classify all finite pairs that can occur as the dimensions of $R[X]$ and $\operatorname{Int}(R)$:</p>
 <p><i>For positive integers $m,n$, there exists a domain $R$ with $\dim R[X]=m$ and $\dim\operatorname{Int}(R)=n$ if and only if $(m,n)=(1,1)$, $(m,n)=(2,2)$, or $m\geq3$ and $n\geq m-1$.</i></p>
+</div></details>
+</li></ul>
+<ul class="paper-entry-list"><li>
+<p style="margin-bottom:0.15em;"><a href="preprints/The_dimensions_of_a_ring_and_its_formal_power_series_ring.pdf" download><b>The dimensions of a ring and its formal power series ring</b></a><br>
+<a href="preprints/The_dimensions_of_a_ring_and_its_formal_power_series_ring.pdf" download>PDF</a>, 2026</p>
+<details class="paper-details"><summary><span style="font-size:80%;font-weight:600;color:black;">&gt;&nbsp;&nbsp;details</span></summary>
+<div class="paper-details-body"><p>Understanding the relation between $\dim R$ and $\dim R[[x]]$ is a classical problem. For Noetherian $R$, one has $\dim R[[x]]=\dim R+1$, but beyond the Noetherian case the behavior is much less rigid.</p>
+<p><a href="https://doi.org/10.1090/S0002-9947-1973-0316451-8">Arnold (1973)</a> proved that finite $\dim R[[x]]$ forces $R$ to be strong finite type (SFT). <a href="https://doi.org/10.1016/S0021-8693(02)00063-7">Coykendall (2002)</a> then constructed a one-dimensional SFT domain with $\dim R[[x]]=\infty$. Answering a question of Coykendall and Gilmer, <a href="https://doi.org/10.1016/j.jpaa.2009.02.010">Kang–Park (2009)</a> showed that finite $\dim R[[x]]$ need not satisfy the upper bound $\dim R[[x]]\leq2\dim R+1$.</p>
+<hr style="width:25%;margin:0.9em 0 0.7em;border:0;border-top:1px solid rgb(157,129,122);">
+<p>We give the complete classification of finite possibilities:</p>
+<p><i>For nonzero commutative rings $R$ with identity, the finite pairs $(\dim R,\dim R[[x]])$ are exactly $(0,1)$ and $(n,m)$ with $1\leq n&lt;m$.</i></p>
+<hr style="width:25%;margin:0.9em 0 0.7em;border:0;border-top:1px solid rgb(157,129,122);">
+<p>An important open problem:</p>
+<p><i>Characterize all rings $R$ such that $R[[x]]$ has finite Krull dimension.</i></p>
 </div></details>
 </li></ul>
 <ul class="paper-entry-list"><li>
@@ -198,4 +213,10 @@ for every finite-dimensional domain $R$, and every value in this interval can oc
   syncControl();
 })();
 </script>
+}}
+
+{{
+<!-- Cloudflare Web Analytics -->
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"01a7743c261d40939ed4a0fd1af06b30"}'></script>
+<!-- End Cloudflare Web Analytics -->
 }}
