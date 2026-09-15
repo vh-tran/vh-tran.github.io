@@ -187,6 +187,7 @@ ICLR 2025 \n
 }}
 
 {{
+<script src="document-links.js"></script>
 <!-- Cloudflare Web Analytics -->
 <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"01a7743c261d40939ed4a0fd1af06b30"}'></script>
 <!-- End Cloudflare Web Analytics -->
