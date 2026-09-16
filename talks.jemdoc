@@ -10,6 +10,8 @@
 <span class="sep" aria-hidden="true">|</span>
 <a href="talks.html" aria-current="page">talks</a>
 <span class="sep" aria-hidden="true">|</span>
+<a href="others.html">others</a>
+<span class="sep" aria-hidden="true">|</span>
 <a href="ai-in-maths.html">AI in maths</a>
 </nav>
 }}
@@ -49,6 +51,9 @@ Contributed talk. ICLR 2025 Weight Space Learning Workshop, Singapore
 
 - *10/2024*. {{<a><b>Algebraic Perspective of Neural Architecture</b></a>}} \n 
 Weekly Seminar, Department of ECE, Rice University, Houston
+
+- *08/2020*. {{<a><b>Introduction to Elliptic Curves</b></a>}} \n
+Workshop on The Mordell-Weil Theorem, Hanoi
 
 {{
 <!-- GoatCounter Analytics -->

@@ -1,7 +1,8 @@
-python jemdoc.py index.jemdoc
-python jemdoc.py publications.jemdoc
-python jemdoc.py publications-by-year.jemdoc
-python jemdoc.py talks.jemdoc
-python jemdoc.py ai-in-maths.jemdoc
-python patch_seo.py
+python -X utf8 jemdoc.py index.jemdoc
+python -X utf8 jemdoc.py publications.jemdoc
+python -X utf8 jemdoc.py publications-by-year.jemdoc
+python -X utf8 jemdoc.py talks.jemdoc
+python -X utf8 jemdoc.py others.jemdoc
+python -X utf8 jemdoc.py ai-in-maths.jemdoc
+python -X utf8 patch_seo.py
 start index.html

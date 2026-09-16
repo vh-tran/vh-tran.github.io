@@ -2,6 +2,8 @@
 ai-in-maths-draft.html
 ai-in-maths-draft.jemdoc
 tmp/
+dist/
+out/
 
 # Publish only assets linked from the AI in maths page
 preprints/*

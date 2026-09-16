@@ -28,9 +28,12 @@
 <span class="sep" aria-hidden="true">|</span>
 <a href="talks.html">talks</a>
 <span class="sep" aria-hidden="true">|</span>
+<a href="others.html">others</a>
+<span class="sep" aria-hidden="true">|</span>
 <a href="ai-in-maths.html" aria-current="page">AI in maths</a>
 </nav>
 <link rel="stylesheet" href="jemdoc.css?v=20260915-expand-all" type="text/css">
+<script id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 
 </p>
 <h1><b>Viet-Hoang Tran | AI in maths</b></h1>
@@ -121,14 +124,14 @@ for every finite-dimensional domain \(R\), and every value in this interval can 
 </div></details>
 </li></ul>
 <ul class="paper-entry-list"><li>
-<p style="margin-bottom:0.15em;"><a href="preprints/The_dimensions_of_a_ring_and_its_formal_power_series_ring.pdf"><b>The dimensions of a ring and its formal power series ring</b></a><br>
-<a href="preprints/The_dimensions_of_a_ring_and_its_formal_power_series_ring.pdf">PDF</a>, 2026</p>
+<p style="margin-bottom:0.15em;"><a href="preprints/The%5Fdimensions%5Fof%5Fa%5Fring%5Fand%5Fits%5Fformal%5Fpower%5Fseries%5Fring.pdf"><b>The dimensions of a ring and its formal power series ring</b></a><br>
+<a href="preprints/The%5Fdimensions%5Fof%5Fa%5Fring%5Fand%5Fits%5Fformal%5Fpower%5Fseries%5Fring.pdf">PDF</a>, 2026</p>
 <details class="paper-details"><summary><span style="font-size:80%;font-weight:600;color:black;">&gt;&nbsp;&nbsp;details</span></summary>
 <div class="paper-details-body"><p>Understanding the relation between \(\dim R\) and \(\dim R[[x]]\) is a classical problem. For Noetherian \(R\), one has \(\dim R[[x]]=\dim R+1\), but beyond the Noetherian case the behavior is much less rigid.</p>
 <p><a href="https://doi.org/10.1090/S0002-9947-1973-0316451-8">Arnold (1973)</a> proved that finite \(\dim R[[x]]\) forces \(R\) to be strong finite type (SFT). <a href="https://doi.org/10.1016/S0021-8693(02)00063-7">Coykendall (2002)</a> then constructed a one-dimensional SFT domain with \(\dim R[[x]]=\infty\). Answering a question of Coykendall and Gilmer, <a href="https://doi.org/10.1016/j.jpaa.2009.02.010">Kang–Park (2009)</a> showed that finite \(\dim R[[x]]\) need not satisfy the upper bound \(\dim R[[x]]\leq2\dim R+1\).</p>
 <hr style="width:25%;margin:0.9em 0 0.7em;border:0;border-top:1px solid rgb(157,129,122);">
 <p>We give the complete classification of finite possibilities:</p>
-<p><i>For nonzero commutative rings \(R\) with identity, the finite pairs \((\dim R,\dim R[[x]])\) are exactly \((0,1)\) and \((n,m)\) with \(1\leq n&lt;m\).</i></p>
+<p><i>For nonzero commutative rings \(R\) with identity, the finite pairs \((\dim R,\dim R[[x]])\) are exactly \((0,1)\) and \((n,m)\) with \(1\leq n&amp;lt;m\).</i></p>
 <hr style="width:25%;margin:0.9em 0 0.7em;border:0;border-top:1px solid rgb(157,129,122);">
 <p>An important open problem:</p>
 <p><i>Characterize all rings \(R\) such that \(R[[x]]\) has finite Krull dimension.</i></p>
@@ -206,38 +209,34 @@ for every finite-dimensional domain \(R\), and every value in this interval can 
 <p>This brings the total to 5 of the 13 complementary pairs, or 10 of the 26 prime graphs. The other 8 pairs remain open. We also tried a few of them, but could not settle any.</p></div></details>
 </li></ul>
 <p style="margin-top:1.6em;"><b>Acknowledgements.</b> Thanks to my Ph.D. advisor, <a href="https://tanmnguyen89.github.io/">Tan M. Nguyen</a>, for his support and for sponsoring some AI subscriptions. Thanks to <a href="https://scholar.google.com/citations?user=CM2qJSoAAAAJ&amp;hl=en">Thieu N. Vo</a> for discussions. Thanks to <a href="https://kpup1710.github.io/">Dung V. Nguyen</a>, <a href="https://scholar.google.com/citations?user=gSki_FwAAAAJ&amp;hl=en">Khoi N. M. Nguyen</a>, <a href="https://www.linkedin.com/in/ngxquang/">Quang X. Nguyen</a>, <a href="https://scholar.google.com/citations?user=fG3mIYEAAAAJ&amp;hl=en">Huu-Tho Tran</a>, and <a href="https://scholar.google.com/citations?user=iRZlaI8AAAAJ&amp;hl=en">Hieu M. Vu</a> for their help with AI tools and hardware matters (alphabetical order).</p>
-</p>
-<div id="footer">
-<div id="footer-text">
-Page generated 2026-09-15 16:51:04 SE Asia Standard Time, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
-</div>
-</div>
-</div>
 <script>
 (function () {
-  var control = document.getElementById('toggle-all-details');
-  var panels = Array.prototype.slice.call(document.querySelectorAll('details.paper-details'));
-  if (!control || panels.length === 0) return;
-  var label = control.querySelector('span');
-  function syncControl() {
-    var allOpen = panels.every(function (panel) { return panel.open; });
-    control.setAttribute('aria-expanded', String(allOpen));
-    label.textContent = allOpen ? 'collapse all' : 'expand all';
-  }
-  control.addEventListener('click', function () {
-    var shouldOpen = !panels.every(function (panel) { return panel.open; });
-    panels.forEach(function (panel) {
-      panel.open = shouldOpen;
-      if (!shouldOpen) {
-        panel.querySelectorAll('details').forEach(function (nested) { nested.open = false; });
-      }
-    });
-    syncControl();
-  });
-  panels.forEach(function (panel) { panel.addEventListener('toggle', syncControl); });
-  syncControl();
+var control = document.getElementById('toggle-all-details');
+var panels = Array.prototype.slice.call(document.querySelectorAll('details.paper-details'));
+if (!control || panels.length === 0) return;
+var label = control.querySelector('span');
+function syncControl() {
+var allOpen = panels.every(function (panel) { return panel.open; });
+control.setAttribute('aria-expanded', String(allOpen));
+label.textContent = allOpen ? 'collapse all' : 'expand all';
+}
+control.addEventListener('click', function () {
+var shouldOpen = !panels.every(function (panel) { return panel.open; });
+panels.forEach(function (panel) {
+panel.open = shouldOpen;
+if (!shouldOpen) {
+panel.querySelectorAll('details').forEach(function (nested) { nested.open = false; });
+}
+});
+syncControl();
+});
+panels.forEach(function (panel) { panel.addEventListener('toggle', syncControl); });
+syncControl();
 })();
 </script>
+
+</p>
+<p>
 <!-- GoatCounter Analytics -->
 <script data-goatcounter="https://vh-tran.goatcounter.com/count" data-goatcounter-settings='{"path":"/ai-in-maths.html"}' async src="https://gc.zgo.at/count.js"></script>
 <!-- End GoatCounter Analytics -->
@@ -245,5 +244,13 @@ Page generated 2026-09-15 16:51:04 SE Asia Standard Time, by <a href="https://gi
 <!-- Cloudflare Web Analytics -->
 <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"01a7743c261d40939ed4a0fd1af06b30"}'></script>
 <!-- End Cloudflare Web Analytics -->
+
+</p>
+<div id="footer">
+<div id="footer-text">
+Page generated 2026-09-16 15:36:32 SE Asia Standard Time, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+</div>
+</div>
+</div>
 </body>
 </html>

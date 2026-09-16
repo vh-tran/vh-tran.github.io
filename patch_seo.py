@@ -59,6 +59,13 @@ PAGES = {
         "canonical": f"{BASE_URL}/talks.html",
         "schema": "",
     },
+    "others.html": {
+        "description": "Honors, awards, poster presentations, academic travel, and other activities by Viet-Hoang Tran.",
+        "keywords": "Viet-Hoang Tran awards, poster presentations, academic travel, mathematics awards, machine learning conferences",
+        "og_title": "Viet-Hoang Tran | Others",
+        "canonical": f"{BASE_URL}/others.html",
+        "schema": "",
+    },
     "ai-in-maths.html": {
         "description": "AI-assisted mathematics preprints by Viet-Hoang Tran, with titles and abstracts in commutative algebra and combinatorics.",
         "keywords": "Viet-Hoang Tran, AI in mathematics, AI-assisted mathematics, mathematical reasoning, commutative algebra, combinatorics, preprints",
