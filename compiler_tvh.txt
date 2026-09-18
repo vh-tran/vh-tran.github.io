@@ -5,4 +5,5 @@ python -X utf8 jemdoc.py talks.jemdoc
 python -X utf8 jemdoc.py others.jemdoc
 python -X utf8 jemdoc.py ai-in-maths.jemdoc
 python -X utf8 patch_seo.py
+python -X utf8 validate_site.py
 start index.html

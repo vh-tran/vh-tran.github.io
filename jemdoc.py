@@ -1628,7 +1628,9 @@ def main():
       thisout = outname
 
     infile = io.open(inname, 'rb')
-    outfile = io.open(thisout, 'w')
+    # Do not fall back to Windows' active ANSI code page: generated pages can
+    # contain names such as Erdős.
+    outfile = io.open(thisout, 'w', encoding='utf-8')
 
 #    print(infile.read())
     f = controlstruct(infile, outfile, conf, inname)

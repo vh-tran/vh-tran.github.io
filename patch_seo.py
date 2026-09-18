@@ -6,6 +6,7 @@ Usage: python patch_seo.py
 import re
 
 BASE_URL = "https://vh-tran.github.io"
+MATHJAX_SCRIPT = '<script id="MathJax-script" defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4.0.0/tex-chtml.js"></script>'
 
 PAGES = {
     "index.html": {
@@ -36,7 +37,7 @@ PAGES = {
   "email": "hoang.tranviet@u.nus.edu"
 }}
 </script>""".format(base=BASE_URL),
-        "extra_head": """<script id="MathJax-script" defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>""",
+        "extra_head": MATHJAX_SCRIPT,
     },
     "publications.html": {
         "description": "Publications by Viet-Hoang Tran – Ph.D. student at the National University of Singapore. Papers at NeurIPS, ICML, ICLR on neural functional networks, parameter space symmetry, and optimal transport.",
@@ -72,7 +73,7 @@ PAGES = {
         "og_title": "Viet-Hoang Tran | AI in maths",
         "canonical": f"{BASE_URL}/ai-in-maths.html",
         "schema": "",
-        "extra_head": """<script id="MathJax-script" defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>""",
+        "extra_head": MATHJAX_SCRIPT,
     },
 }
 
