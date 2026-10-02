@@ -84,6 +84,11 @@ a, a > tt {
 	text-decoration: none;
 }
 
+.paper-title-unlinked {
+	color: #1a0dab;
+	font-weight: bold;
+}
+
 
 a[href]:hover {
 	background-color: rgba(26, 13, 171, 0.08);
