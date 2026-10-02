@@ -62,8 +62,8 @@ email: hoang.tranviet \[at\] u.nus.edu {{<span style="margin-left:15px;"></span>
 == *News*
 
 - *Sep 2026*. 2 papers accepted at NeurIPS 2026:
--- [https://neurips.cc/virtual/2026/poster/151604 *Tree-Sliced Orlicz Integral Probability Metric*]
--- [https://neurips.cc/virtual/2026/poster/155524 *Conformal Prediction for Distribution-to-Distribution Regression*]
+-- *Tree-Sliced Orlicz Integral Probability Metric*
+-- *Conformal Prediction for Distribution-to-Distribution Regression*
 
 - *Aug 2026*. Amid the Math-AI hype, with help from models available through ChatGPT and Claude Code and an agentic harness we built around them, I started exploring a few maths problems and got some decent results. The goal is to better understand what LLMs can and can't do in mathematical reasoning, rather than simply to get the problems solved. {{<span class="research-followup">I share my progress on this <a href="ai-in-maths.html">project page</a>.</span>}}
 
