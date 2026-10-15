@@ -110,7 +110,7 @@ for every finite-dimensional domain $R$, and every value in this interval can oc
 <p><a href="https://doi.org/10.1090/S0002-9947-1973-0316451-8">Arnold (1973)</a> proved that finite $\dim R[[x]]$ forces $R$ to be strong finite type (SFT). <a href="https://doi.org/10.1016/S0021-8693(02)00063-7">Coykendall (2002)</a> then constructed a one-dimensional SFT domain with $\dim R[[x]]=\infty$. Answering a question of Coykendall and Gilmer, <a href="https://doi.org/10.1016/j.jpaa.2009.02.010">Kang–Park (2009)</a> showed that finite $\dim R[[x]]$ need not satisfy the upper bound $\dim R[[x]]\leq2\dim R+1$.</p>
 <hr style="width:25%;margin:0.9em 0 0.7em;border:0;border-top:1px solid rgb(157,129,122);">
 <p>We give the complete classification of finite possibilities:</p>
-<p><i>For nonzero commutative rings $R$ with identity, the finite pairs $(\dim R,\dim R[[x]])$ are exactly $(0,1)$ and $(n,m)$ with $1\leq n&lt;m$.</i></p>
+<p><i>For nonzero commutative rings $R$ with identity, the finite pairs $(\dim R,\dim R[[x]])$ are exactly $(0,1)$ and $(n,m)$ with $1\leq n<m$.</i></p>
 <hr style="width:25%;margin:0.9em 0 0.7em;border:0;border-top:1px solid rgb(157,129,122);">
 <p>An important open problem:</p>
 <p><i>Characterize all rings $R$ such that $R[[x]]$ has finite Krull dimension.</i></p>
