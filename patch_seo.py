@@ -10,7 +10,7 @@ MATHJAX_SCRIPT = '<script id="MathJax-script" defer="defer" src="https://cdn.jsd
 
 PAGES = {
     "index.html": {
-        "description": "Viet-Hoang Tran – Ph.D. student in Mathematics at the National University of Singapore (NUS).",
+        "description": "Viet-Hoang Tran – Research Fellow in Mathematics at the National University of Singapore (NUS).",
         "keywords": "Viet-Hoang Tran, Tran Viet Hoang, machine learning, parameter space symmetry, mode connectivity, metanetwork, optimal transport, NUS, National University of Singapore, neural functional networks, tree-sliced Wasserstein",
         "og_title": "Viet-Hoang Tran",
         "canonical": f"{BASE_URL}/",
@@ -25,7 +25,7 @@ PAGES = {
     "name": "National University of Singapore",
     "url": "https://nus.edu.sg/"
   }},
-  "jobTitle": "Ph.D. Student in Mathematics",
+  "jobTitle": "Research Fellow in Mathematics",
   "alumniOf": {{
     "@type": "Organization",
     "name": "Hanoi University of Science"
@@ -33,14 +33,14 @@ PAGES = {
   "sameAs": [
     "https://scholar.google.com/citations?hl=en&user=HXsV5dQAAAAJ&view_op=list_works&sortby=pubdate"
   ],
-  "description": "Ph.D. student in Mathematics at the National University of Singapore, researching machine learning, parameter space symmetry, mode connectivity, metanetworks, and optimal transport.",
+  "description": "Research Fellow in Mathematics at the National University of Singapore, researching machine learning, parameter space symmetry, mode connectivity, metanetworks, and optimal transport.",
   "email": "hoang.tranviet@u.nus.edu"
 }}
 </script>""".format(base=BASE_URL),
         "extra_head": MATHJAX_SCRIPT,
     },
     "publications.html": {
-        "description": "Publications by Viet-Hoang Tran – Ph.D. student at the National University of Singapore. Papers at NeurIPS, ICML, ICLR on neural functional networks, parameter space symmetry, and optimal transport.",
+        "description": "Publications by Viet-Hoang Tran – Research Fellow at the National University of Singapore. Papers at NeurIPS, ICML, ICLR on neural functional networks, parameter space symmetry, and optimal transport.",
         "keywords": "Viet-Hoang Tran publications, neural functional networks, tree-sliced Wasserstein distance, parameter space symmetry, NeurIPS, ICML, ICLR",
         "og_title": "Viet-Hoang Tran | Publications",
         "canonical": f"{BASE_URL}/publications.html",
@@ -54,7 +54,7 @@ PAGES = {
         "schema": "",
     },
     "talks.html": {
-        "description": "Talks and presentations by Viet-Hoang Tran – Ph.D. student at the National University of Singapore. Invited talks at NeurIPS, ICLR, UCLA, Rice University, and other venues.",
+        "description": "Talks and presentations by Viet-Hoang Tran – Research Fellow at the National University of Singapore. Invited talks at NeurIPS, ICLR, UCLA, Rice University, and other venues.",
         "keywords": "Viet-Hoang Tran talks, invited talks, machine learning seminar, NeurIPS oral, ICLR",
         "og_title": "Viet-Hoang Tran | Talks",
         "canonical": f"{BASE_URL}/talks.html",
